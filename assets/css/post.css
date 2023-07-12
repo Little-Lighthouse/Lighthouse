@@ -1,0 +1,9 @@
+.post{
+    display: block;
+}  
+.post[ style*="display:none"]{
+    display: none;
+}
+#no-results{
+    display: none;
+}

@@ -1,0 +1,61 @@
+::-webkit-scrollbar {width: 10px;}
+/* Track */::-webkit-scrollbar-track {background: #8b0000;}
+/* Handle */::-webkit-scrollbar-thumb {background: #daa520;}
+/* Handle on hover */::-webkit-scrollbar-thumb:hover {background: #ffd700;}
+.cursor-not-allowed{cursor: not-allowed;}
+
+body{position: relative;}
+section{min-height: 80vh;}
+section#history{min-height: fit-content !important;margin: 100px auto;}
+section#members{align-items: center;margin: 0 auto;max-width: 1200px;}
+
+#darkMode{
+    padding: 10px 15px;
+    font-size: 24px;
+    position: fixed;
+    bottom: 46px;
+    right: 10px;
+    background-color: #daa520;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    z-index: 99999;
+}
+.dark{
+    background-color: #221f1f;
+    color: #fff;
+}
+
+#posts .container-fluid{
+    width: 80vw;
+    border-radius: 12px;
+    box-shadow: 7px 7px #000;
+}
+#posts .container-fluid .img{
+    width: 500px;
+    border-radius: 12px;
+}
+
+#mission > div{
+    border-radius: 12px;
+    box-shadow: 7px 7px #000;
+}
+#contact form{
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 7px 7px #000;
+}
+.card{
+    box-shadow: 7px 7px #000;
+}
+#members .founder{
+    border: 3px solid #ffd700 !important;
+}
+#members .card-title{
+    font-family: 'Anton', sans-serif;
+}
+#members .card-text{
+    font-style: italic;
+    font-size: 14px;
+    font-family: monospace;
+}
