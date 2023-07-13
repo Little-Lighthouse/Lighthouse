@@ -16,4 +16,4 @@ Since we conclude this introduction session about our page, we extend our heartf
 -----
 
 ## Link
-Primary link : <br>
+Primary link : https://little-lighthouse.github.io/Lighthouse/<br>
