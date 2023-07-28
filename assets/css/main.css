@@ -9,6 +9,7 @@ section{min-height: 80vh;}
 section#history{min-height: fit-content !important;margin: 100px auto;}
 section#members{align-items: center;margin: 0 auto;max-width: 1200px;}
 
+
 #darkMode{
     padding: 10px 15px;
     font-size: 24px;

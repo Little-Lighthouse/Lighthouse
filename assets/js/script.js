@@ -32,6 +32,28 @@ function mode(){
 }
 mode();
 
+window.addEventListener('load', function () {
+  var AttModal = new bootstrap.Modal(document.getElementById('attention_modal'), {});
+  AttModal.show();
+
+  document.getElementById('close-btn').disabled = true;
+
+  let remainingSec = 4;
+  const displayCountdown = document.getElementById('countdown');
+  displayCountdown.textContent = 'You can close this modal in ' + remainingSec + ' seconds';
+  
+  let countdown = setInterval(function() {
+    remainingSec -= 1;
+    displayCountdown.textContent = 'You can close this modal in ' + remainingSec + ' seconds';
+  
+    if (remainingSec <= 0) {
+      document.getElementById('close-btn').disabled = false;
+      displayCountdown.textContent = '';
+      clearInterval(countdown);
+    }
+  }, 1000);
+});
+
 $(document).ready(function(){
     $("#MyanmarUni").hide();
     $("#MyanmarZg").hide();
