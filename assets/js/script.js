@@ -1,3 +1,4 @@
+/* ---- REGISTERING SERVICE WORKER ---- */
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/Lighthouse/sw.js')
     .then(reg => console.log('service worker registered'))
@@ -5,12 +6,14 @@ if('serviceWorker' in navigator){
 }
 
 
+/* ---- DISPLAYING CURRENT YEAR IN FOOTER ---- */
 window.addEventListener('load', () => {
     const year = document.getElementById('currentYear');
     year.innerHTML = new Date().getFullYear();
 })
 
 
+/* ---- LIGHT & DARK MODE ---- */
 document.getElementById('darkMode').addEventListener('click',()=>{
     const darkLight = document.getElementById('darkLight');
     if (document.body.classList.contains('dark')) {
@@ -34,9 +37,11 @@ function mode(){
 mode();
 
 
+/* ---- DISPLAYING MODAL ---- */
 window.addEventListener('load', function () {
   var AttModal = new bootstrap.Modal(document.getElementById('attention_modal'), {});
-  if (!localStorage.getItem('modalShown')) {
+
+  if (localStorage.getItem('modalShown') !== 'true') {
     AttModal.show();
   }
 
@@ -54,6 +59,9 @@ window.addEventListener('load', function () {
       document.getElementById('close-btn').disabled = false;
       displayCountdown.textContent = '';
       clearInterval(countdown);
+      setTimeout(function () {
+        localStorage.removeItem('modalShown');
+      }, 24 * 60 * 60 * 1000); // 24 hours in milliseconds
     }
   }, 1000);
 
@@ -63,6 +71,7 @@ window.addEventListener('load', function () {
 });
 
 
+/* ---- LANGUAGE/FONT CHANGE FOR ABOUT US ---- */
 $(document).ready(function(){
     $("#MyanmarUni").hide();
     $("#MyanmarZg").hide();
