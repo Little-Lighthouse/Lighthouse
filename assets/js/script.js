@@ -4,10 +4,12 @@ if('serviceWorker' in navigator){
     .catch(err => console.log('service worker not registered', err));
 }
 
+
 window.addEventListener('load', () => {
     const year = document.getElementById('currentYear');
     year.innerHTML = new Date().getFullYear();
 })
+
 
 document.getElementById('darkMode').addEventListener('click',()=>{
     const darkLight = document.getElementById('darkLight');
@@ -22,7 +24,6 @@ document.getElementById('darkMode').addEventListener('click',()=>{
         localStorage.setItem('Mode', 'Dark');
     }
 })
-
 function mode(){
     if (localStorage.getItem('Mode') === 'Dark'){
         document.body.classList.add('dark');
@@ -32,27 +33,35 @@ function mode(){
 }
 mode();
 
+
 window.addEventListener('load', function () {
   var AttModal = new bootstrap.Modal(document.getElementById('attention_modal'), {});
-  AttModal.show();
+  if (!localStorage.getItem('modalShown')) {
+    AttModal.show();
+  }
 
   document.getElementById('close-btn').disabled = true;
 
   let remainingSec = 4;
   const displayCountdown = document.getElementById('countdown');
   displayCountdown.textContent = 'You can close this modal in ' + remainingSec + ' seconds';
-  
-  let countdown = setInterval(function() {
+
+  let countdown = setInterval(function () {
     remainingSec -= 1;
     displayCountdown.textContent = 'You can close this modal in ' + remainingSec + ' seconds';
-  
+
     if (remainingSec <= 0) {
       document.getElementById('close-btn').disabled = false;
       displayCountdown.textContent = '';
       clearInterval(countdown);
     }
   }, 1000);
+
+  document.getElementById('close-btn').addEventListener('click', function () {
+    localStorage.setItem('modalShown', true);
+  });
 });
+
 
 $(document).ready(function(){
     $("#MyanmarUni").hide();
