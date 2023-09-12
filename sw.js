@@ -1,5 +1,5 @@
-const staticCacheName = 'site-static-v-8_24_2023-2.17';
-const dynamicCacheName = 'site-dynamic-v-8_24_2023-2.17';
+const staticCacheName = 'site-static-v-9_12_2023-2';
+const dynamicCacheName = 'site-dynamic-v-9_12_2023-2';
 const assets = [
   '/Lighthouse/',
   '/Lighthouse/index.html',

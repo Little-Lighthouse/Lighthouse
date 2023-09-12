@@ -66,7 +66,7 @@ window.addEventListener('load', function () {
   }, 1000);
 
   document.getElementById('close-btn').addEventListener('click', function () {
-    localStorage.setItem('modalShown', true);
+    //localStorage.setItem('modalShown', true);
   });
 });
 
