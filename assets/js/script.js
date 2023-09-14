@@ -1,9 +1,9 @@
-/* ---- REGISTERING SERVICE WORKER ---- */
+/* ---- REGISTERING SERVICE WORKER ---- 
 if('serviceWorker' in navigator){
   navigator.serviceWorker.register('/Lighthouse/sw.js')
     .then(reg => console.log('service worker registered'))
     .catch(err => console.log('service worker not registered', err));
-}
+}*/
 
 
 /* ---- DISPLAYING CURRENT YEAR IN FOOTER ---- */
