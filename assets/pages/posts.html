@@ -1,106 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/main.css"><link rel="shortcut icon" href="../images/Logo.jpg" type="image/x-icon">
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0JQC1VLDM"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-S0JQC1VLDM');</script>
+        
+        <!-- ios support -->
+        <link rel="apple-touch-icon" href="../images/icons/icon-96x96.png">
+        <meta name="apple-mobile-web-app-status-bar" content="#fe6902">
+        <meta name="theme-color" content="#ff9000">
 
-        gtag('config', 'G-S0JQC1VLDM');
-        </script>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/colors.css">
-        <link rel="shortcut icon" href="../images/Logo.jpg" type="image/x-icon">
-        <link rel="manifest" href="../../manifest.json">
         <!--Framworks-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
+        <!--Fonts-->
+
         <!--Icons-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <title>Posts | Menu</title>
+        <title>Our Posts</title>
     </head>
-    <body>
-        <nav class="navbar navbar-expand-sm navbar-dark sticky-top border-warning border-bottom bg-171769e7">
+    <body style="background-image: url(../images/low-poly-grid-haikei.svg);">
+        <nav class="navbar navbar-expand-sm sticky-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="/Lighthouse/">
-                <img src="assets/images/Logo.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../../index.html"><i class="bi bi-house-door-fill"></i> Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="posts.html"><i class="bi bi-file-post-fill"></i> Posts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html"><i class="bi bi-info-circle-fill"></i>  About</a>
-                </li>
-                </ul>
-            </div>
+                <a class="navbar-brand" href="/Lighthouse/"><img src="../images/Logo.jpg" alt="Logo" style="width:40px;" class="rounded-pill"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+                
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html"><i class="bi bi-house-door-fill"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../pages/posts.html"><i class="bi bi-file-post-fill"></i> Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/about.html"><i class="bi bi-info-circle-fill"></i> About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
-        <button id="darkMode"><span id="darkLight"><i class="bi bi-circle-half"></i></span></button>
-        
-        <h1 class="text-center text-decoration-underline">Choose The Category</h1>
-        <div class="container-fluid d-flex justify-content-center align-items-center flex-wrap" style="margin-bottom: 160px;">
+        <section class="eventAndNews mt-3 text-white text-center">
+            <div class="container-fluid d-flex justify-content-center flex-wrap">
+                <div class="postDiv p-2 m-2">
+                    <h2>10 Study Hacks For Students</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/381341942_163870713434513_6988945997917087601_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=NJX4u4AOrUkAX8wM29Y&_nc_ht=scontent-sin6-3.xx&oh=00_AfAzCmjelaMnI_0Q9gf-1WPHCCLx9pCjX6ml9wZAh9D5MA&oe=6595F80C" alt="Study Hacks For Students">
+                    <p class="post-content">
+                        📌စာကိုထိထိရောက်ရောက်နဲ့အချိန်တိုအတွင်းဘယ်လိုကျက်ကြမလဲ🤷‍♂️🤷‍♀️<br>
+                        "မြန်မာပြည်မှာရှိတဲ့ ဆယ်ကျော်သက်တွေ ကျောင်းသားကျောင်းသူတွေအကုန်လုံး ကိုယ်လိုချင်တဲ့ university, scholarship, goal ရဖို့  ဘယ်အရာကိုမှ မကျက်မမှတ်ဘဲ မွေးတည်းက အကုန်သိ အကုန်တတ်လာပြီး ရသွားတယ်ဆိုတဲ့သူရှိနိုင်လို့လား? ..."</p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=163871416767776&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
 
-            <div class="btn-group dropdown-center m-2" style="width: 300px; height: 100px">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Education</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="categories/unavailable.html">Nature</a></li>
-                    <li><a class="dropdown-item" href="categories/unavailable.html">Science</a></li>
-                    <li><a class="dropdown-item" href="categories/Education/lifeSkills.html">Life Skills</a></li>
-                </ul>
-            </div>
-            
-            <div class="btn-group dropdown-center m-2" style="width: 300px; height: 100px">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Entertainment</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="categories/unavailable.html">Music</a></li>
-                    <li><a class="dropdown-item" href="categories/unavailable.html">Bands</a></li>
-                    <li><a class="dropdown-item" href="categories/Entertainment/others.html">Others</a></li>
-                </ul>
-            </div>
-            
-            <div class="btn-group dropdown-center m-2" style="width: 300px; height: 100px">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Mental health & healthy life style</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="categories/unavailable.html">Quotes</a></li>
-                    <li><a class="dropdown-item" href="categories/unavailable.html">People</a></li>
-                </ul>
-            </div>
-            
-            <div class="btn-group dropdown-center m-2" style="width: 300px; height: 100px">
-                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">News</button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="categories/unavailable.html">Breaking News</a></li>
-                </ul>
-            </div>
+                <div class="postDiv p-2 m-2">
+                    <h2>Michelle Obama</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/380768522_159750683846516_3627458259080039074_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=xgeoibNkgOEAX_TY1q6&_nc_ht=scontent-sin6-4.xx&oh=00_AfAWmy6Re5HjZV0S2iTa7t09GGeMyjuDw1Y3NoKb2XiaYw&oe=65965E0D" alt="Michelle Obama">
+                    <p class="post-content">
+                        ✨️ အားလုံးပဲမင်္ဂလာညချမ်းလေးပါ✨️ ဒီညမှာတော့အားလုံးအတွက်စိတ်ဓါတ်ခွန်အားဖြစ်စေမဲ့အကြောင်းအရာလေးတစ်ခုဖြစ်တဲ့ Michelle Obama အကြောင်းကို ပြောပြပေးသွားမှာပဲဖြစ်ပါတယ်။🥰
+                    </p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=159751533846431&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
 
-        </div>
+                <div class="postDiv p-2 m-2">
+                    <h2>16 Personalities</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/375980340_155133164308268_3070832637670960115_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=t7AI_U1ora4AX8G9QoZ&_nc_ht=scontent-sin6-2.xx&oh=00_AfCXIzzHfrw6E5xvwqp9AqVUAGg8MpKtbNu691QNWaKc7w&oe=6596392B" alt="16 Personalities">
+                    <p class="post-content">
+                        သင်ဟာintrovertတစ်ယောက်လား၊ extrovertတစ်ယောက်လား။🧐 သင့်ရဲ့MBTIကရောဘာဖြစ်မလဲ။🤔ဘယ်groupထဲမှာပါပြီး ဘယ်လိုအရာတွေမှာ အားသာချက်တွေရှိနေမလဲ။ 🤷‍♂️🤷‍♀️<br>
+                        ဒီအကြောင်းအရာတွေကိုတော့ အောက်ကပုံတွေမှာ အသေးစိတ်ရှင်းပြထားပေးပါတယ်။🤗 </p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=155134460974805&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
 
-        <footer class="bg-171769e7 fixed-bottom">
-            <p class="text-center text-white p-2 m-0">© <span id="currentYear"></span> Little Lighthouse</p><hr class="m-1 text-light">
-            <div class="container d-flex justify-content-around align-items-center mt-1 p-0">
-                <a class="text-white" href="../pages/notice.html" target="_blank">Notice</a>
-                <a class="text-white" href="../pages/NA.html" target="_blank">FAQs</a>
-                <div>
-                    <a class="text-white" href="https://www.facebook.com/profile.php?id=100094347565758" target="_blank"><i style="font-size: 1.8em;" class="bi bi-facebook"></i></a>
+                <div class="postDiv p-2 m-2">
+                    <h2>Study Smarter, Not Harder</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/375602204_150856978069220_2316685016352617745_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=CJliPde6ZZ4AX-1TYcm&_nc_ht=scontent-sin6-1.xx&oh=00_AfCR8jEsmWRnKVomfSbuzxP5RPXCiGD-dn43QDewOnM9wg&oe=6597050E" alt="Study Smarter, Not Harder">
+                    <p class="post-content">📌 သင်ကအလုပ်မှာပဲဖြစ်ဖြစ်
+                        ကျောင်းစာမှာပဲဖြစ်ဖြစ် ဘယ်လောက်ပဲကြိုးကြိုးစားစားလုပ်ဆောင်ခဲ့ပေမဲ့  ထင်သလောက် အလုပ်မဖြစ်တဲ့အခါ စိတ်ပင်ပန်းမူတွေ စိတ်ဖိစီးမူတွေနဲ့ပဲကြုံနေရတယ်မလား။ ဒါဆို20%လောက်သာအားစိုက်ရ ပြီး80%လောက်ကောင်းမွန်တဲ့ result တွေရဖို့မင်မင်တို့ကနေဘယ်လို smartကျကျလုပ်ဆောင်ရမလဲဆိုတာတွေကို ပြောပြပေးသွားမှာပဲဖြစ်ပါတယ်။</p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=150857011402550&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
+
+                <div class="postDiv p-2 m-2">
+                    <h2>Barack Obama</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/370546620_144989091989342_2432389628586854648_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=3EjpGPG5fYgAX8BORE7&_nc_oc=AQnIJhk5aHAvz20-cP6CiQWt99piH0golEcrwp71JiY7t5V_NnU_oyoKYl3-zI5sypY&_nc_ht=scontent-sin6-2.xx&oh=00_AfBGAhksp0AAhw3Kvg0dLNTmlGfSwt-BSBsw0l8U1SjLCQ&oe=65965062" alt="Barack Obama">
+                    <p class="post-content">📌အမေရိကန်ရဲ့ ၄၄ ယောက်မြောက် သမ္မတဖြစ်တဲ့ Barack Obama ကိုမသိသူ မရှိဘူးလို့ ထင်ပါတယ်။ သူဟာ အမေရိကန်ရဲ့ ပထမဆုံး African-American သမ္မတဖြစ်တဲ့အပြင် Washington တို့၊ Lincoln တို့လို သူ့ပြည်သူတွေက လေးစားပြီး လူသိများတဲ့ သမ္မတတွေထဲက တစ်ယောက်လဲဖြစ်ပါတယ်။ ဒါဆိုရင်တော့ Obama က ဘာဖြစ်လို့ နိုင်ငံရေး‌လောကထဲဝင်ရောက်ခဲ့တာလဲ၊ ဘယ်လိုအခက်အခဲတွေ ရင်ဆိုင်ခဲ့ရသလဲ နဲ့ သူ့ငယ်ဘဝ စတဲ့အကြောင်းတွေကို ဆက်လက်တင်ပြပေးမှာဖြစ်ပါတယ်။</p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=145003061987945&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
+
+                <div class="postDiv p-2 m-2">
+                    <h2>9 Popular Time Management Techniques And Tools</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/369140915_140831305738454_551218448104559786_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=3635dc&_nc_ohc=RR6jClYJlmoAX-SyhO3&_nc_ht=scontent-sin6-2.xx&oh=00_AfC0KTk-EGJi0cPV3jirrEvZicSBKFe8ab_-79l0OHR7gA&oe=659764AB" alt="9 Popular Time Management Techniques And Tools">
+                    <p class="post-content">📌ပထမ post မှာတော့ admin တို့က Time Management နဲ့ပတ်သက်ပြီး tips လေးတွေ ပြောပါခဲ့ပြီမို့လို့ အခုတစ်ခေါက်မှာတော့ စာဖတ်သူတို့ကို Time management မှာအသုံးဝင်တဲ့ technique လေး ၉ ခုကိုပြောပြပေးမှာဖြစ်ပါတယ်🤗။</p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=140831712405080&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
+
+                <div class="postDiv p-2 m-2">
+                    <h2>Icon of the Seas</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/365430876_136492879505630_5207632380324400368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=3635dc&_nc_ohc=HuN-xkUV-XIAX-O0hDu&_nc_ht=scontent-sin6-3.xx&oh=00_AfA9Ag3_TjDRAkyalRCRd_zT4izJF8Zu6OifMKFpj9_A2g&oe=65977ECF" alt="Icon of the Seas">
+                    <p class="post-content">
+                        📌စာဖတ်သူတို့ Titanic ကို မသိသူ ရှားမယ်လို့ထင်ပါတယ်။ သက်တမ်းတော့တိုခဲ့ပေမယ့် သူ့ခေတ်သူ့အခါမှာတော့ Titanic သင်္ဘောဟာ အကြီးဆုံးဖြစ်ခဲ့ပါတယ်။<br>
+                        🚢Admin အခုပြောပြသွားမယ့် Icon of The Seas ဆိုတာကတော့ လက်ရှိ ကမ္ဘာမှာ အကြီးဆုံးပင်လယ်ကူးသင်္ဘောကြီး ပဲဖြစ်ပါတယ်။</p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=136493439505574&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
+
+                <div class="postDiv p-2 m-2">
+                    <h2>Time Management</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/363315547_131200270034891_2260030983644535771_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=gBU910tFtbYAX9Iqv3p&_nc_ht=scontent-sin6-2.xx&oh=00_AfC9kInoLaDVqeTYQjmjcc6_976nvHVIcnm9zX1hhbK1TA&oe=65969A9B" alt="Time Management">
+                    <p class="post-content">
+                        📌လူ့ဘဝမှာ အချိန်ဆိုတာ မွေးဖွားလာစဥ်ကတည်းက အသားအရောင် အခြေအနေမခွဲခြားဘဲနဲ့ adminတို့‌​​ရော အခု စာဖတ်နေတဲ့သူတို့ရော အားလုံး  တန်းတူညီတူ ပိုင်ဆိုင်ခွင့်ရတဲ့အရာတစ်ခုဖြစ်ပါတယ်။<br>
+                        ‼️တကယ့်လက်တွေ့လောကမှာ နာရီထဲကို ဓါတ်ခဲထည့်၊ "အချိန်" ဆိုတဲ့နာမ်တစ်ခုပေးပြီး တချက်ချက် ရွေ့လျားနေတဲ့အရာဝတ္ထုတစ်ခုက ပျက်စီးသွားခဲ့ရင်တောင် အသစ်ပြန်ဝယ်လို့ရပေမဲ့ ကုန်ဆုံးသွားတဲ့ စက္ကန့်သံတစ်ချက်က ဝယ်ယူလို့မရနိုင်သလို နောက်ဘယ်တော့မှ ပြန်မရနိုင်တော့ပါဘူး​နော်‼️
+                    </p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=131200510034867&id=100094347565758&ref=embed_post">Read More</a>
                 </div>
             </div>
+
+        <footer class="mt-5">
+            <p class="text-center text-white p-1 m-0">© 2023 Little Lighthouse<br> Visits: <script type="text/javascript" src="//counter.websiteout.net/js/7/6/0/0"></script></p><hr class="m-1 text-light">
+            <div class="container d-flex justify-content-around align-items-center mt-1 p-1">
+                <a class="text-white" onclick="notAvailable()">Notice</a>
+                <a class="text-white" onclick="notAvailable()">FAQs</a>
+                <div><a class="text-white" href="https://www.facebook.com/profile.php?id=100094347565758" target="_blank"><i style="font-size: 1.8em;" class="bi bi-facebook"></i></a></div>
+            </div>
         </footer>
+
         <script src="../js/script.js"></script>
     </body>
 </html>
