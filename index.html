@@ -1,143 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/main.css"><link rel="shortcut icon" href="assets/images/Logo.jpg" type="image/x-icon">
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0JQC1VLDM"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-S0JQC1VLDM');
-        </script>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/colors.css">
-        <link rel="shortcut icon" href="assets/images/Logo.jpg" type="image/x-icon">
-        <link rel="manifest" href="manifest.json">
+        <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-S0JQC1VLDM');</script>
+        
         <!-- ios support -->
         <link rel="apple-touch-icon" href="assets/images/icons/icon-96x96.png">
         <meta name="apple-mobile-web-app-status-bar" content="#fe6902">
         <meta name="theme-color" content="#ff9000">
+
         <!--Framworks-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         
+        <!--Fonts-->
+
         <!--Icons-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <title>Little Lighthouse | Home</title>
     </head>
-    <body class="dark" style="background: url(assets/images/low-poly-grid-haikei.svg);">
-        <header class="bg-dark sticky-top">
-            <p class="p-2 text-center m-0"><i class="bi bi-clock-fill"></i> Time: <span id="mmrTime"></span>
-        </header>
-        <nav class="navbar navbar-expand-sm navbar-dark sticky-top border-warning border-bottom bg-171769e7" style="top: 38px;">
+    <body style="background-image: url(assets/images/low-poly-grid-haikei.svg);">
+        <nav class="navbar navbar-expand-sm sticky-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="/Lighthouse/">
-                <img src="assets/images/Logo.jpg" alt="Logo" style="width:40px;" class="rounded-pill">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="assets/pages/posts.html"><i class="bi bi-file-post-fill"></i> Posts</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="assets/pages/about.html"><i class="bi bi-info-circle-fill"></i> About</a>
-                </li>
-                </ul>
-            </div>
+                <a class="navbar-brand" href="/Lighthouse/"><img src="assets/images/Logo.jpg" alt="Logo" style="width:40px;" class="rounded-pill"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+                
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="assets/pages/posts.html"><i class="bi bi-file-post-fill"></i> Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="assets/pages/about.html"><i class="bi bi-info-circle-fill"></i> About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <!-- The Modal -->
-        <div class="modal" id="attention_modal">
-          <div class="modal-dialog">
-            <div class="modal-content text-dark">
-              <div class="modal-header"><h4 class="modal-title"><i class="bi bi-exclamation-octagon-fill"></i> Attention Please!</h4></div>
-              <div class="modal-body">Please read our <a target="_blank" href="assets/pages/notice.html">NOTICE</a> before navigating between our web pages.</div>
-              <div class="modal-footer"><p id="countdown"></p><button type="button" id="close-btn" class="btn btn-danger" data-bs-dismiss="modal">Close</button></div>
-        
-            </div>
-          </div>
-        </div>
+        <header class="text-center text-white">"Together We Strive, Together We Thrive!"</header>
 
-        <button id="darkMode" style="display: none;"></button>
-
-        <section class="container w-75 bg-9b681ce7 p-2 my-5 rounded-3" id="trendingPost">
-            <h1 class="text-center text-decoration-underline">Trending Now <i class="bi bi-graph-up-arrow"></i></h1>
-            <div class="container-fluid text-center">
-                
-                <div class="container">
-                    <h2>Time Management</h2>
-                    <img style="width: 75%;height: auto;" src="https://img.freepik.com/free-vector/time-management-design-concept-planning-organization-working-time-without-interruption-procrastination-isometric_1284-31989.jpg?w=740&t=st=1690790368~exp=1690790968~hmac=08d59f6d660a02010e41ee3d8b33681478d3f33b598af8d3c607f8cfbea94dc7" alt="Time Management">
-                    <p class="post-content">📌လူ့ဘဝမှာ အချိန်ဆိုတာ မွေးဖွားလာစဥ်ကတည်းက အသားအရောင် အခြေအနေမခွဲခြားဘဲနဲ့ adminတို့‌ေရာ အခု စာဖတ်နေတဲ့သူတို့ရော အားလုံး  တန်းတူညီတူ ပိုင်ဆိုင်ခွင့်ရတဲ့အရာတစ်ခုဖြစ်ပါတယ်။</p>   
-                    <a class="btn btn-success text-white px-3 py-1" href="/Lighthouse/assets/posts/Education/timeManagement.html">Read More</a>
-                </div><hr>
-
-                <div class="container">
-                    <h2>Icon of the Seas</h2>
-                    <img style="width: 75%;height: auto;" src="https://media.cnn.com/api/v1/images/stellar/prod/230626081600-01-icon-of-the-seas-sails-exterior.jpg?c=original" alt="Icon of the Seas">
+        <section class="recentPosts mt-3 text-white text-center">
+            <h1 class="">Recently Uploaded</h1>
+            <div class="container-fluid d-flex justify-content-center flex-wrap">
+                <div class="postDiv p-2 m-2">
+                    <h2>10 Study Hacks For Students</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-3.xx.fbcdn.net/v/t39.30808-6/381341942_163870713434513_6988945997917087601_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=NJX4u4AOrUkAX8wM29Y&_nc_ht=scontent-sin6-3.xx&oh=00_AfAzCmjelaMnI_0Q9gf-1WPHCCLx9pCjX6ml9wZAh9D5MA&oe=6595F80C" alt="Study Hacks For Students">
                     <p class="post-content">
-                        ➡ စာဖတ်သူတို့  Titanic ကို မသိသူ ရှားမယ်လို့ထင်ပါတယ်။ သက်တမ်းတော့တိုခဲ့ပေမယ့် သူ့ခေတ်သူ့အခါမှာတော့ Titanic သင်္ဘောဟာ အကြီးဆုံးဖြစ်ခဲ့ပါတယ်။<br>
-                        ➡ Admin အခုပြောပြသွားမယ့် Icon of The Seas ဆိုတာကတော့ လက်ရှိ ကမ္ဘာမှာ အကြီးဆုံးပင်လယ်ကူးသင်္ဘောကြီး ပဲဖြစ်ပါတယ်။
-                        </p>   
-                    <a class="btn btn-success text-white px-3 py-1" href="/Lighthouse/assets/posts/Entertainment/iconOfTheSeas.html">Read More</a>
-                </div><hr>
+                        📌စာကိုထိထိရောက်ရောက်နဲ့အချိန်တိုအတွင်းဘယ်လိုကျက်ကြမလဲ🤷‍♂️🤷‍♀️<br>
+                        "မြန်မာပြည်မှာရှိတဲ့ ဆယ်ကျော်သက်တွေ ကျောင်းသားကျောင်းသူတွေအကုန်လုံး ကိုယ်လိုချင်တဲ့ university, scholarship, goal ရဖို့  ဘယ်အရာကိုမှ မကျက်မမှတ်ဘဲ မွေးတည်းက အကုန်သိ အကုန်တတ်လာပြီး ရသွားတယ်ဆိုတဲ့သူရှိနိုင်လို့လား?..."</p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=163871416767776&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
 
-                <div class="container">
-                    <h2>Techniques for Time Management</h2>
-                    <img style="width: 75%;height: auto;" src="https://img.freepik.com/free-vector/flat-time-management-concept-illustration_52683-55533.jpg?w=740&t=st=1690790602~exp=1690791202~hmac=9c214c141b3a071d0d1fdac8793f7e2c626061706994985cc379d83f68054451" alt="Techniques for Time Management">
-                    <p class="post-content">📌ပထမ post မှာတော့ admin တို့က Time Management နဲ့ပတ်သက်ပြီး tips လေးတွေ ပြောပါခဲ့ပြီမို့လို့ အခုတစ်ခေါက်မှာတော့ စာဖတ်သူတို့ကို Time management မှာအသုံးဝင်တဲ့ technique လေး ၉ ခုကိုပြောပြပေးမှာဖြစ်ပါတယ်🤗။</p>   
-                    <a class="btn btn-success text-white px-3 py-1" href="/Lighthouse/assets/posts/Education/techniquesForTimeManagement.html">Read More</a>
-                </div><hr>
+                <div class="postDiv p-2 m-2">
+                    <h2>Michelle Obama</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-4.xx.fbcdn.net/v/t39.30808-6/380768522_159750683846516_3627458259080039074_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=3635dc&_nc_ohc=xgeoibNkgOEAX_TY1q6&_nc_ht=scontent-sin6-4.xx&oh=00_AfAWmy6Re5HjZV0S2iTa7t09GGeMyjuDw1Y3NoKb2XiaYw&oe=65965E0D" alt="Michelle Obama">
+                    <p class="post-content">
+                        ✨️ အားလုံးပဲမင်္ဂလာညချမ်းလေးပါ✨️ ဒီညမှာတော့အားလုံးအတွက်စိတ်ဓါတ်ခွန်အားဖြစ်စေမဲ့အကြောင်းအရာလေးတစ်ခုဖြစ်တဲ့ Michelle Obama အကြောင်းကို ပြောပြပေးသွားမှာပဲဖြစ်ပါတယ်။🥰
+                    </p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=159751533846431&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
 
+                <div class="postDiv p-2 m-2">
+                    <h2>16 Personalities</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-2.xx.fbcdn.net/v/t39.30808-6/375980340_155133164308268_3070832637670960115_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3635dc&_nc_ohc=t7AI_U1ora4AX8G9QoZ&_nc_ht=scontent-sin6-2.xx&oh=00_AfCXIzzHfrw6E5xvwqp9AqVUAGg8MpKtbNu691QNWaKc7w&oe=6596392B" alt="16 Personalities">
+                    <p class="post-content">
+                        သင်ဟာintrovertတစ်ယောက်လား၊ extrovertတစ်ယောက်လား။🧐 သင့်ရဲ့MBTIကရောဘာဖြစ်မလဲ။🤔ဘယ်groupထဲမှာပါပြီး ဘယ်လိုအရာတွေမှာ အားသာချက်တွေရှိနေမလဲ။ 🤷‍♂️🤷‍♀️<br>
+                        ဒီအကြောင်းအရာတွေကိုတော့ အောက်ကပုံတွေမှာ အသေးစိတ်ရှင်းပြထားပေးပါတယ်။🤗 </p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=155134460974805&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
+
+                <div class="postDiv p-2 m-2">
+                    <h2>Study Smarter, Not Harder</h2>
+                    <img style="width: 40%;height: auto;" src="https://scontent-sin6-1.xx.fbcdn.net/v/t39.30808-6/375602204_150856978069220_2316685016352617745_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=CJliPde6ZZ4AX-1TYcm&_nc_ht=scontent-sin6-1.xx&oh=00_AfCR8jEsmWRnKVomfSbuzxP5RPXCiGD-dn43QDewOnM9wg&oe=6597050E" alt="Study Smarter, Not Harder">
+                    <p class="post-content">📌 သင်ကအလုပ်မှာပဲဖြစ်ဖြစ်
+                        ကျောင်းစာမှာပဲဖြစ်ဖြစ် ဘယ်လောက်ပဲကြိုးကြိုးစားစားလုပ်ဆောင်ခဲ့ပေမဲ့  ထင်သလောက် အလုပ်မဖြစ်တဲ့အခါ စိတ်ပင်ပန်းမူတွေ စိတ်ဖိစီးမူတွေနဲ့ပဲကြုံနေရတယ်မလား။ ဒါဆို20%လောက်သာအားစိုက်ရ ပြီး80%လောက်ကောင်းမွန်တဲ့ result တွေရဖို့မင်မင်တို့ကနေဘယ်လို smartကျကျလုပ်ဆောင်ရမလဲဆိုတာတွေကို ပြောပြပေးသွားမှာပဲဖြစ်ပါတယ်။</p>   
+                    <a class="btn btn-success text-white px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=150857011402550&id=100094347565758&ref=embed_post">Read More</a>
+                </div>
             </div>
         </section>
 
-        <section class="container w-75 bg-9b681ce7 p-2 my-5 rounded-3" id="comingSoonPost">
-            <h1 class="text-center text-decoration-underline">Coming Soon <i class="bi bi-calendar-check-fill"></i></h1>
-            <div class="container-fluid text-center">
-            </div>
-        </section><hr>
-
-        <!--section class="container w-75 bg-9b681ce7 p-2 my-5 rounded-3" id="recentPost">
-            <h1 class="text-center text-decoration-underline">Recently Posted <i class="bi bi-clock-fill"></i></h1>
-            <div class="container-fluid text-center">
-                <div class="container">
-                    <h2>Forest</h2>
-                    <img style="width: 75%;height: auto;" src="https://randompicturegenerator.com/img/national-park-generator/gd3bc659debba71da18b6ea4aeacbaf7e11acad39b64d62ea33488effcac18b740578d0631c1954d8b98458309ffda564_640.jpg" alt="Forest">
-                    <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit sit amet tell us a uctor dign iss im.</p>   
-                    <a class="btn btn-success text-white px-3 py-1" href="#3">Read More</a>
-                </div><hr>
-
-                <div class="container">
-                    <h2>Single Tree</h2>
-                    <img style="width: 75%;height: auto;" src="https://randompicturegenerator.com/img/national-park-generator/ga297e25bf92a69031cf84ae257638a9344de49b2de59bee57cc49bd7e3f44f3310434c9a89f870cd44c047ffac168c4c_640.jpg" alt="Single Tree">
-                    <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit sit amet tell us a uctor dign iss im.</p>   
-                    <a class="btn btn-success text-white px-3 py-1" href="#4">Read More</a>
-                </div><hr>
-            </div>
-        </section><hr-->
-
-        <footer class="bg-171769e7">
-            <p class="text-center text-white p-2 m-0">© <span id="currentYear"></span> Little Lighthouse<br> Visits: <script type="text/javascript" src="//counter.websiteout.net/js/7/6/0/0"></script></p><hr class="m-1 text-light">
-            <div class="container d-flex justify-content-around align-items-center mt-1 p-0">
-                <a class="text-white" href="assets/pages/notice.html" target="_blank">Notice</a>
-                <a class="text-white" href="assets/pages/NA.html" target="_blank">FAQs</a>
-                <div>
-                    <a class="text-white" href="https://www.facebook.com/profile.php?id=100094347565758" target="_blank"><i style="font-size: 1.8em;" class="bi bi-facebook"></i></a>
-                </div>
+        <footer class="mt-5">
+            <p class="text-center text-white p-1 m-0">© 2023 Little Lighthouse<br> Visits: <script type="text/javascript" src="//counter.websiteout.net/js/7/6/0/0"></script></p><hr class="m-1 text-light">
+            <div class="container d-flex justify-content-around align-items-center mt-1 p-1">
+                <a class="text-white" onclick="notAvailable()">Terms of Use</a>
+                <a class="text-white" onclick="notAvailable()">FAQs</a>
+                <div><a class="text-white" href="https://www.facebook.com/profile.php?id=100094347565758" target="_blank"><i style="font-size: 1.8em;" class="bi bi-facebook"></i></a></div>
             </div>
         </footer>
+
         <script src="assets/js/script.js"></script>
-        <script src="assets/js/time.js"></script>
     </body>
 </html>
