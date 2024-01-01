@@ -12,7 +12,7 @@ footer{background-color:#090652 !important;}
 
 .postDiv{width:40vw;min-width:290px;height:fit-content; border-radius:12px;background-color:teal;box-shadow:17px 13px 20px 4px #000;}
 
-select#Language{width:fit-content;height:fit-content;}
+select#Language, select#topicType{width:fit-content;height:fit-content;}
 
 .card{max-width:200px !important;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;opacity:0.9;}
 .sectDivider{border: 2.5px dashed #fff; opacity: 0.6;}

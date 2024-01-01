@@ -1,4 +1,4 @@
-/* ---- LANGUAGE/FONT CHANGE FOR ABOUT US ---- */
+/* ---- LANGUAGE/FONT CHANGE (ABOUT US) ---- */
 $(document).ready(function(){
     $("#MyanmarUni").hide();
     $("#MyanmarZg").hide();
@@ -24,7 +24,39 @@ $(document).ready(function(){
     });
 });
 
-/* ---- NOT AVAILABLE */
+
+/* ---- CHOOSING TOPIC (POSTS) ---- */
+$(document).ready(function(){
+
+  $('#topicType').on('change', function() {
+    if ( this.value == 'All'){
+      $(".education").show();
+      $(".motivation").show();
+      $(".entertainment").show();
+    }
+
+    if ( this.value == 'Education'){
+      $(".education").show();
+      $(".motivation").hide();
+      $(".entertainment").hide();
+    }
+
+    if ( this.value == 'Motivation'){
+      $(".education").hide();
+      $(".motivation").show();
+      $(".entertainment").hide();
+    }
+
+    if ( this.value == 'Entertainment'){
+      $(".education").hide();
+      $(".motivation").hide();
+      $(".entertainment").show();
+    }
+  });
+});
+
+
+/* ---- NOT AVAILABLE ---- */
 function notAvailable(){
   alert("The requested page is currently not available.\nWe apologize for the inconvenience.");
 }
