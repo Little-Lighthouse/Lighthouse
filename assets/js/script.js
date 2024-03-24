@@ -31,6 +31,7 @@ $(document).ready(function(){
   $('#topicType').on('change', function() {
     if ( this.value == 'All'){
       $(".education").show();
+      $(".NewsForYouth").show();
       $(".motivation").show();
       $(".entertainment").show();
       $(".mentalPsycho").show();
@@ -38,6 +39,7 @@ $(document).ready(function(){
 
     if ( this.value == 'Education'){
       $(".education").show();
+      $(".NewsForYouth").hide();
       $(".motivation").hide();
       $(".entertainment").hide();
       $(".mentalPsycho").hide();
@@ -45,6 +47,7 @@ $(document).ready(function(){
 
     if ( this.value == 'Motivation'){
       $(".education").hide();
+      $(".NewsForYouth").hide();
       $(".motivation").show();
       $(".entertainment").hide();
       $(".mentalPsycho").hide();
@@ -52,6 +55,7 @@ $(document).ready(function(){
 
     if ( this.value == 'Entertainment'){
       $(".education").hide();
+      $(".NewsForYouth").hide();
       $(".motivation").hide();
       $(".entertainment").show();
       $(".mentalPsycho").hide();
@@ -59,9 +63,18 @@ $(document).ready(function(){
 
     if ( this.value == 'MentPsy'){
       $(".education").hide();
+      $(".NewsForYouth").hide();
       $(".motivation").hide();
       $(".entertainment").hide();
       $(".mentalPsycho").show();
+    }
+
+    if ( this.value == 'News For Youth'){
+      $(".education").hide();
+      $(".NewsForYouth").show();
+      $(".motivation").hide();
+      $(".entertainment").hide();
+      $(".mentalPsycho").hide();
     }
   });
 });
