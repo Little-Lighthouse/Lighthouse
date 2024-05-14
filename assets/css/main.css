@@ -10,6 +10,9 @@ footer{background-color:#090652 !important;}
 .nav-link{color:#fff !important;}
 .active{background-color:#090652 !important;border-radius:10px;}
 
+.statsBox{width:220px;height:120px;border-radius:20px;padding:20px;margin: 20px;background-color:teal;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;}
+.statsBox span{color: #e4c046;font-size: 1.8em;font-weight: 400;}
+
 .postDiv{width:40vw;min-width:290px;height:fit-content; border-radius:12px;background-color:teal;box-shadow:17px 13px 20px 4px #000;}
 
 select#Language, select#topicType{width:fit-content;height:fit-content;}
