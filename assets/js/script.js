@@ -35,6 +35,7 @@ $(document).ready(function(){
       $(".motivation").show();
       $(".entertainment").show();
       $(".mentalPsycho").show();
+      $(".EngSetoutPete").show();
     }
 
     if ( this.value == 'Education'){
@@ -43,6 +44,7 @@ $(document).ready(function(){
       $(".motivation").hide();
       $(".entertainment").hide();
       $(".mentalPsycho").hide();
+      $(".EngSetoutPete").hide();
     }
 
     if ( this.value == 'Motivation'){
@@ -51,6 +53,7 @@ $(document).ready(function(){
       $(".motivation").show();
       $(".entertainment").hide();
       $(".mentalPsycho").hide();
+      $(".EngSetoutPete").hide();
     }
 
     if ( this.value == 'Entertainment'){
@@ -59,6 +62,7 @@ $(document).ready(function(){
       $(".motivation").hide();
       $(".entertainment").show();
       $(".mentalPsycho").hide();
+      $(".EngSetoutPete").hide();
     }
 
     if ( this.value == 'MentPsy'){
@@ -67,6 +71,7 @@ $(document).ready(function(){
       $(".motivation").hide();
       $(".entertainment").hide();
       $(".mentalPsycho").show();
+      $(".EngSetoutPete").hide();
     }
 
     if ( this.value == 'News For Youth'){
@@ -75,6 +80,16 @@ $(document).ready(function(){
       $(".motivation").hide();
       $(".entertainment").hide();
       $(".mentalPsycho").hide();
+      $(".EngSetoutPete").hide();
+    }
+
+    if ( this.value == 'Eng Setout Pete'){
+      $(".education").hide();
+      $(".NewsForYouth").hide();
+      $(".motivation").hide();
+      $(".entertainment").hide();
+      $(".mentalPsycho").hide();
+      $(".EngSetoutPete").show();
     }
   });
 });
