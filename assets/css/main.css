@@ -1,28 +1,29 @@
 /* ---- ELEMENTS ---- */
-body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;}
+body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;background-image: url(../images/low-poly-grid-haikei.svg);}
 header{background-color:#011723 !important;padding:3px;}
-nav{opacity:0.85;}
-footer{background-color:#090652 !important;}
+nav{opacity:0.95;}
+footer{background-color:#6B1111 !important;}
 
 
 /* ---- CLASSES ---- */
-.navbar{background-color:#fe5301 !important;}
+.navbar{background-color:#6B1111 !important;}
 .nav-link{color:#fff !important;}
 .active{background-color:#090652 !important;border-radius:10px;}
 
-.statsBox{width:220px;height:120px;border-radius:20px;padding:20px;margin: 20px;background-color:teal;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;}
+.statsBox{width:220px;height:120px;border-radius:20px;padding:20px;margin: 20px;background-color: #93692F;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;}
 .statsBox span{color: #e4c046;font-size: 1.8em;font-weight: 400;}
 
-.postDiv{width:40vw;min-width:290px;height:fit-content; border-radius:12px;background-color:teal;box-shadow:17px 13px 20px 4px #000;}
+.postDiv{width:40vw;min-width:290px;height:fit-content; border-radius:12px;background-color: #93692F;box-shadow:17px 13px 20px 4px #000;}
 
 select#Language, select#topicType{width:fit-content;height:fit-content;}
 
-.card{max-width:200px !important;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;opacity:0.9;}
+.card{max-width:200px !important;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;opacity:0.9;background-color: #93692F !important;}
+.card-body{color:#fff !important;}
 .sectDivider{border: 2.5px dashed #fff; opacity: 0.6;}
 
 
 /* ---- SECTIONS ---- */
-section#ourStoryAndMission{color:#fff !important;width:80vw;opacity:0.9;border-radius:14px;box-shadow:17px 13px 20px 4px #000;background-color:teal;}
+section#ourStoryAndMission{color:#fff !important;width:80vw;opacity:0.9;border-radius:14px;box-shadow:17px 13px 20px 4px #000;background-color:#93692F;}
 
 section#timeline{
     width: fit-content;
@@ -30,7 +31,7 @@ section#timeline{
     opacity:0.9;
     border-radius:14px;
     box-shadow:17px 13px 20px 4px #000;
-    background-color:teal;
+    background-color:#93692F;
 }
 
 section#contactUs .postDiv a{
@@ -38,7 +39,7 @@ section#contactUs .postDiv a{
     color: #fff;
 }
 section#contactUs form{
-    background-color:#008080;
+    background-color:#93692F;
     cursor:not-allowed;
     max-width:500px;
     border-radius:12px;
