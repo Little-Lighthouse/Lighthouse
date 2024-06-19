@@ -1,5 +1,5 @@
 /* ---- ELEMENTS ---- */
-body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;background-image: url(../images/low-poly-grid-haikei.svg);}
+body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;background-color: #dd8324 !important;}
 header{background-color:#011723 !important;padding:3px;}
 nav{opacity:0.95;}
 footer{background-color:#6B1111 !important;}
