@@ -34,6 +34,7 @@ $(document).ready(function(){
       $(".EY_Post").show();
       $(".VFM_Post").show();
       $(".ESP_Post").show();
+      $(".YS_Post").show();
     }
 
     if ( this.value == 'EFY_Opt'){
@@ -42,6 +43,7 @@ $(document).ready(function(){
       $(".EY_Post").hide();
       $(".VFM_Post").hide();
       $(".ESP_Post").hide();
+      $(".YS_Post").hide();
     }
 
     if ( this.value == 'NFY_Opt'){
@@ -50,6 +52,7 @@ $(document).ready(function(){
       $(".EY_Post").hide();
       $(".VFM_Post").hide();
       $(".ESP_Post").hide();
+      $(".YS_Post").hide();
     }
 
     if ( this.value == 'VFM_Opt'){
@@ -58,6 +61,7 @@ $(document).ready(function(){
       $(".EY_Post").hide();
       $(".VFM_Post").show();
       $(".ESP_Post").hide();
+      $(".YS_Post").hide();
     }
 
     if ( this.value == 'EY_Opt'){
@@ -66,6 +70,7 @@ $(document).ready(function(){
       $(".EY_Post").show();
       $(".VFM_Post").hide();
       $(".ESP_Post").hide();
+      $(".YS_Post").hide();
     }
 
     if ( this.value == 'ESP_Opt'){
@@ -74,6 +79,16 @@ $(document).ready(function(){
       $(".EY_Post").hide();
       $(".VFM_Post").hide();
       $(".ESP_Post").show();
+      $(".YS_Post").hide();
+    }
+
+    if ( this.value == 'YS_Opt'){
+      $(".EFY_Post").hide();
+      $(".NFY_Post").hide();
+      $(".EY_Post").hide();
+      $(".VFM_Post").hide();
+      $(".ESP_Post").hide();
+      $(".YS_Post").show();
     }
   });
 });
