@@ -1,29 +1,31 @@
 /* ---- ELEMENTS ---- */
-body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;background-color: #dd8324 !important;}
-header{background-color:#011723 !important;padding:3px;}
+body{margin:0;padding:0;box-sizing:border-box;min-height:100vh;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;background-color: #fff2c5 !important;}
+header{background-color:#13376B !important;padding:3px;}
 nav{opacity:0.95;}
-footer{background-color:#6B1111 !important;}
+footer{background-color:#10b6b4 !important;}
 
 
 /* ---- CLASSES ---- */
-.navbar{background-color:#6B1111 !important;}
-.nav-link{color:#fff !important;}
-.active{background-color:#090652 !important;border-radius:10px;}
+.navbar{background-color:#10b6b4 !important;}
+.nav-link{color:#13376B !important;}
+.active{background-color:#fed52b !important;border-radius:10px;}
+.btn{background-color:#fed52b !important;  color: #13376B !important;}
+.HeaderS{color: #13376B !important;}
 
-.statsBox{width:220px;height:120px;border-radius:20px;padding:20px;margin: 20px;background-color: #93692F;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;}
+.statsBox{width:220px;height:120px;border-radius:20px;padding:20px;margin: 20px;background-color: #13376B;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;}
 .statsBox span{color: #e4c046;font-size: 1.8em;font-weight: 400;}
 
-.postDiv{width:40vw;min-width:290px;height:fit-content; border-radius:12px;background-color: #93692F;box-shadow:17px 13px 20px 4px #000;}
+.postDiv{width:40vw;min-width:290px;height:fit-content; border-radius:12px;background-color: #13376B;box-shadow:17px 13px 20px 4px #000;}
 
 select#Language, select#topicType{width:fit-content;height:fit-content;}
 
-.card{max-width:200px !important;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;opacity:0.9;background-color: #93692F !important;}
+.card{max-width:200px !important;border:2px solid #000 !important;box-shadow:17px 13px 20px 4px #000;opacity:0.9;background-color: #13376B !important;}
 .card-body{color:#fff !important;}
-.sectDivider{border: 2.5px dashed #fff; opacity: 0.6;}
+.sectDivider{border: 2.5px dashed #13376B; opacity: 0.6;}
 
 
 /* ---- SECTIONS ---- */
-section#ourStoryAndMission{color:#fff !important;width:80vw;opacity:0.9;border-radius:14px;box-shadow:17px 13px 20px 4px #000;background-color:#93692F;}
+section#ourStoryAndMission{color:#fff !important;width:80vw;opacity:0.9;border-radius:14px;box-shadow:17px 13px 20px 4px #000;background-color:#13376B;}
 
 section#timeline{
     width: fit-content;
@@ -31,7 +33,7 @@ section#timeline{
     opacity:0.9;
     border-radius:14px;
     box-shadow:17px 13px 20px 4px #000;
-    background-color:#93692F;
+    background-color:#13376B;
 }
 
 section#contactUs .postDiv a{
@@ -39,7 +41,7 @@ section#contactUs .postDiv a{
     color: #fff;
 }
 section#contactUs form{
-    background-color:#93692F;
+    background-color:#13376B;
     cursor:not-allowed;
     max-width:500px;
     border-radius:12px;
