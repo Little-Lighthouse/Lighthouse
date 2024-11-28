@@ -98,3 +98,7 @@ $(document).ready(function(){
 function notAvailable(){
   alert("The requested page is currently not available.\nWe apologize for the inconvenience.");
 }
+// ---- TOGGLE POSTS ----
+function togglePost(post) {
+  post.classList.toggle("expanded");
+}
