@@ -1,223 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/main.css"><link rel="shortcut icon" href="../images/Logo.jpeg" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="keywords" content="Little Lighthouse, LLH, Myanmar Youth Organization">
+        <meta name="description" content="Empowering youth with content. ✍️ Illuminate, empower, transform.🌟 Join us to shine together! 🌏">
+        <link rel="shortcut icon" href="../images/Logo.jpeg" type="image/x-icon">
 
+        
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0JQC1VLDM"></script>
         <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-S0JQC1VLDM');</script>
 
-        <!--Framworks-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
-        <!--Fonts-->
+        <!-- FRAMEWORKS & ICONS-->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-        <!--Icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <title>About Us</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>About us</title>
     </head>
-    <body>
-        <nav class="navbar navbar-expand-sm sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/Lighthouse/"><img src="../images/Logo.jpeg" alt="Logo" style="width:40px;" class="rounded-pill"></a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
-                
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../../index.html"><i class="bi bi-house-door-fill"></i> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/posts.html"><i class="bi bi-file-post-fill"></i> Posts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="../pages/about.html"><i class="bi bi-info-circle-fill"></i> About</a>
-                        </li>
+    <body class="secondaryBG secondaryText">
+
+        <nav class="navbar primaryBG text-base-100 shadow-md fixed inset-x-0 top-0 z-[3]">
+            <div class="flex-1">
+                <a href="../../index.html"><div class="avatar w-10"><img class="rounded-full" alt="Organization Logo" src="../images/Logo.jpeg"></div></a>
+            </div>
+
+            <div class="flex-none">
+                <div class="dropdown dropdown-end md:hidden">
+                    <label tabindex="0" class="btn btn-ghost text-base-100 btn-circle"><i class="bi bi-list text-2xl"></i></label>
+                    <ul tabindex="0" class="menu primaryBG menu-sm dropdown-content mt-4 z-[3] p-2 shadow rounded-box w-80">
+                        <li><a href="../../index.html" data-discover="true"><i class="bi bi-house-door-fill"></i> Home</a></li>
+                        <li><a href="program.html" data-discover="true"><i class="bi bi-folder2-open"></i> Programs & Projects</a></li>
+                        <li><a href="timeline.html" data-discover="true"><i class="bi bi-calendar4-week"></i> Our Timeline</a></li>
+                        <li><a href="about.html" data-discover="true"><i class="bi bi-info-circle-fill"></i> About us</a></li>
                     </ul>
                 </div>
+                
+                <ul class="menu menu-horizontal px-1 hidden md:flex items-center">
+                    <li><a href="../../index.html" data-discover="true"><i class="bi bi-house-door-fill"></i> Home</a></li>
+                    <li><a href="program.html" data-discover="true"><i class="bi bi-folder2-open"></i> Programs & Projects</a></li>
+                    <li><a href="timeline.html" data-discover="true"><i class="bi bi-calendar4-week"></i> Our Timeline</a></li>
+                    <li><a href="about.html" data-discover="true"><i class="bi bi-info-circle-fill"></i> About us</a></li>
+                </ul>
             </div>
         </nav>
 
-        <section class="p-2 pb-3 mx-auto my-5" id="ourStoryAndMission">
-            <h1 class="text-center text-white">Our Story & Mission</h1>
-            <div class="container">
-                <form class="d-flex">
-                    <p>Choose the Language/Font : &nbsp;&nbsp;</p>
-                    <select id="Language">
-                        <option value="English">English</option>
-                        <option value="Unicode">Myanmar (Unicode)</option>
-                        <option value="Zawgyi">Myanmar (Zawgyi)</option>
-                    </select>
-                </form><br>
-
-                <div id="English">
-                    <p class="text-center" style="font-size: 18px;font-weight:700;color:darkorange;">Warmly welcome to our Little Lighthouse, where knowledge blossoms and inspiration flourishes!</p>
-                    &nbsp;&nbsp;&nbsp;First and foremost, we would like to share the reason behind creating this page. As a close-knit group of friends, we joined forces to bring you an enchanting platform for knowledge-sharing. Our mission is to provide captivating content covering education, current news, knowledge, mental health, and sometimes entertainment, with a specific focus on teenagers and adults. We aim to empower you on your path to personal growth and enlightenment through cutting-edge insights and innovative perspectives.<br><br>
-                    &nbsp;&nbsp;&nbsp;As the name suggests, "<span style="font-weight: 600;font-style:italic;">Little Lighthouse</span>," our dedicated goal is to illuminate your path and guide you through obstacles and challenges with unwavering commitment. Apart from these, there's more! We're not just about guiding you through challenges and obstacles. We're also passionate about exploring new opportunities and gathering valuable information for you.We are committed to expanding our reach and making a positive impact on society.<br><br>
-                    &nbsp;&nbsp;&nbsp;Since we conclude this introduction session about our page, we extend our heartfelt gratitude for your time and patience. We greatly value your input and suggestions, so please do not hesitate to share any topics or content you would like to see on our platform. Your feedback is invaluable in shaping the future of our "<span style="font-weight: 600;font-style:italic;">Little Lighthouse</span>".<br><br>
-                    <p class="text-center" style="font-size: 18px;font-weight:700;color:darkorange;">Thank you once again for joining us on this incredible journey!</p>
-                </div>
-                <div id="MyanmarUni">
-                    <p class="text-center" style="font-size: 18px;font-weight:700;color:darkorange;">အားလုံးပဲ မင်္ဂလာပါလို့ Little Lighthouse Pageမှ ဦးစွာပထမ နှုတ်ခွန်းဆက်သအပ်ပါတယ်။</p>
-                    &nbsp;&nbsp;&nbsp;ကျွန်တော်တို့ ဒီ page လေးတည်ထောင်ရတဲ့ အကြောင်းကို မပြောပြခင်မှာ ဘယ်လို စတင်ခဲ့တာလဲဆိုတဲ့ အကြောင်းကို အရင်ဆုံးဝေမျှပေးချင်ပါတယ်။ ကျွန်တော်တို့ <span style="font-weight: 600;font-style:italic;">Little Lighthouse</span> ဆိုတဲ့ အဖွဲ့လေးကတော့ တစ်တန်းတည်းအတူတက်ခဲ့ကြတဲ့ စိတ်တူကိုယ်တူသူငယ်ချင်းတွေ စုပေါင်းပြီး ဖွဲ့စည်းထားတဲ့အသင်း အဖွဲ့လေးဖြစ်ပါတယ်။ ကျွန်တော်တို့ အဖွဲ့လေးဟာ လူငယ်တွေကို အဓိက focus ထားပြီး လူငယ်တွေအတွက် အကျိုးရှိစေမယ့်ဗဟုသုတ၊ ပညာရေး၊ motivation အစရှိတဲ့အကြောင်းအရာတွေကို တင်ပြပေးသွားမှာ ဖြစ်ပါတယ်။ <br><br>
-                    &nbsp;&nbsp;&nbsp;ကျွန်တော်တို့ အဖွဲ့ name ဖြစ်တဲ့ မီးပြတိုက်ဆိုတဲ့အတိုင်း ကမ်းမမြင် လမ်းမမြင် အပြောကျယ်လှတဲ့ လောကကြီးမှာ ကျောက်ဆောင်ကျောက်ခဲတွေနဲ့တူတဲ့ အခက်အခဲတွေ ပြဿနာတွေကို ကျော်လွှားနိုင်အောင် လူငယ်တွေကို တတ်အားသမျှ လမ်းပြကူညီပံပိုးပေးသွားမှာပဲဖြစ်ပါတယ်။ မီးပြတိုက်ကထွက်လာတဲ့အလင်းရောင်တစ်ခုဟာ မည်မျှပင်သေးငယ်စေကာမူ ကြမ်းတမ်းလွန်းတဲ့ ပင်လယ်ပြင်ကျယ်ကြီးရဲ့ အမှောင်ထုကို ထိုးဖောက်ပြီး ဒုက္ခကြုံ၊အကူအညီလိုအပ်နေတဲ့ သူတွေအတွက် လမ်းစပျောက်နေတဲ့သင်္ဘောတွေအတွက် မျှော်လင့်ချက်တွေနဲ့ လမ်းညွန်မှုတွေကို မီးမောင်းထိုးပြနိုင်ပါတယ်။ အလားတူကျွန်တော်တို့က အရမ်းကြီးမားတဲ့ group မဟုတ်ပေမဲ့ ယခု စာဖတ်ပရိတ်သတ်တို့ရဲ့ နှလုံးသားထဲက မီးပြတိုက်ငယ်လေးကို ခွန်အားပေးစွမ်းချင်တဲ့ ရည်ရွယ်ချက်နဲ့ အခုလို "မီးပြတိုက်ငယ်" ဆိုတဲ့နာမည်လေးပေးခဲ့တာဖြစ်ပါတယ်။<br><br>
-                    &nbsp;&nbsp;&nbsp;ကျွန်တော်တို့အနေနဲ့ လူငယ်တွေအတွက် အကျိုးရှိမယ်လို့ယုံကြည်တဲ့ သိမှတ်ဖွယ်ရာ topic လေးတွေ၊ စိတ်ဝင်စားစရာကောင်းတဲ့ အဖြစ်အပျက်လေးတွေ၊ လက်တလောရေပန်းစားနေတဲ့အကြောင်းအရာတွေ စတာတွေကို ကြိုးစားပြီးတင်ဆက်ပေးသွားမှာပဲဖြစ်ပါတယ်။ဒါ့အပြင် ရံဖန်ရံခါမှာလည်း entertainment နဲ့သက်ဆိုင်တဲ့အကြောင်းအရာတွေကို မျှဝေပေးသွားမှာပါ။<br><br>
-                    <p class="text-center px-3">ဒါဆိုရင်ကျွန်တော်တို့ Page ရဲ့မိတ်ဆက်လေးကိုတော့ ဒီလောက်နဲ့ပဲ ရပ်နားခွင့်ပြုပါခင်ဗျာ။ အကြံပေးချင်တာ၊ တင်စေချင်တဲ့ topic တွေရှိရင်လည်း အချိန်မရွေး လာပြောနိုင်ပါတယ်။ နောက်ပိုင်းမှာလည်း လူငယ်‌တွေကို တစ်ဖက်တစ်လမ်းကနေ ကူညီပေးနိုင်မယ့် အကျိုးရှိမယ့် Future planတွေလည်းရှိတဲ့အတွက် အားလုံး Stay tuned ပါဗျ အခုလိုအချိန်ပေးပြီးဖတ်ပေးတဲ့ အတွက် ကျေးဇူးအများကြီးတင်ပါတယ်ခင်ဗျ။ ကျွန်တော်တို့အနေနဲ့ လူငယ်အကျိုးပြုအဖွဲ့အစည်းတစ်ခုဖြစ်အောင် အတတ်နိုင်ဆုံးကြိုးစားသွားပါမယ်။</p>
-                </div>
-                <div id="MyanmarZg">
-                    <p class="text-center" style="font-size: 18px;font-weight:700;color:darkorange;">အားလုံးပဲ မဂၤလာပါလို႔ Little Lighthouse Pageမွ ဦးစြာပထမ ႏႈတ္ခြန္းဆက္သအပ္ပါတယ္။</p>
-                    &nbsp;&nbsp;&nbsp;ကြၽန္ေတာ္တို႔ ဒီ page ေလးတည္ေထာင္ရတဲ့ အေၾကာင္းကို မေျပာျပခင္မွာ ဘယ္လို စတင္ခဲ့တာလဲဆိုတဲ့ အေၾကာင္းကို အရင္ဆုံးေဝမွ်ေပးခ်င္ပါတယ္။ ကြၽန္ေတာ္တို႔ <span style="font-weight: 600;font-style:italic;">Little Lighthouse</span> ဆိုတဲ့ အဖြဲ႕ေလးကေတာ့ တစ္တန္းတည္းအတူတက္ခဲ့ၾကတဲ့ စိတ္တူကိုယ္တူသူငယ္ခ်င္းေတြ စုေပါင္းၿပီး ဖြဲ႕စည္းထားတဲ့အသင္း အဖြဲ႕ေလးျဖစ္ပါတယ္။ ကြၽန္ေတာ္တို႔ အဖြဲ႕ေလးဟာ လူငယ္ေတြကို အဓိက focus ထားၿပီး လူငယ္ေတြအတြက္ အက်ိဳးရွိေစမယ့္ဗဟုသုတ၊ ပညာေရး၊ motivation အစရွိတဲ့အေၾကာင္းအရာေတြကို တင္ျပေပးသြားမွာ ျဖစ္ပါတယ္။ <br><br>
-                    &nbsp;&nbsp;&nbsp;ကြၽန္ေတာ္တို႔ အဖြဲ႕ name ျဖစ္တဲ့ မီးျပတိုက္ဆိုတဲ့အတိုင္း ကမ္းမျမင္ လမ္းမျမင္ အေျပာက်ယ္လွတဲ့ ေလာကႀကီးမွာ ေက်ာက္ေဆာင္ေက်ာက္ခဲေတြနဲ႔တူတဲ့ အခက္အခဲေတြ ျပႆနာေတြကို ေက်ာ္လႊားႏိုင္ေအာင္ လူငယ္ေတြကို တတ္အားသမွ် လမ္းျပကူညီပံပိုးေပးသြားမွာပဲျဖစ္ပါတယ္။ မီးျပတိုက္ကထြက္လာတဲ့အလင္းေရာင္တစ္ခုဟာ မည္မွ်ပင္ေသးငယ္ေစကာမူ ၾကမ္းတမ္းလြန္းတဲ့ ပင္လယ္ျပင္က်ယ္ႀကီးရဲ႕ အေမွာင္ထုကို ထိုးေဖာက္ၿပီး ဒုကၡႀကဳံ၊အကူအညီလိုအပ္ေနတဲ့ သူေတြအတြက္ လမ္းစေပ်ာက္ေနတဲ့သေဘၤာေတြအတြက္ ေမွ်ာ္လင့္ခ်က္ေတြနဲ႔ လမ္းၫြန္မႈေတြကို မီးေမာင္းထိုးျပႏိုင္ပါတယ္။ အလားတူကြၽန္ေတာ္တို႔က အရမ္းႀကီးမားတဲ့ group မဟုတ္ေပမဲ့ ယခု စာဖတ္ပရိတ္သတ္တို႔ရဲ႕ ႏွလုံးသားထဲက မီးျပတိုက္ငယ္ေလးကို ခြန္အားေပးစြမ္းခ်င္တဲ့ ရည္႐ြယ္ခ်က္နဲ႔ အခုလို "မီးျပတိုက္ငယ္" ဆိုတဲ့နာမည္ေလးေပးခဲ့တာျဖစ္ပါတယ္။<br><br>
-                    &nbsp;&nbsp;&nbsp;ကြၽန္ေတာ္တို႔အေနနဲ႔ လူငယ္ေတြအတြက္ အက်ိဳးရွိမယ္လို႔ယုံၾကည္တဲ့ သိမွတ္ဖြယ္ရာ topic ေလးေတြ၊ စိတ္ဝင္စားစရာေကာင္းတဲ့ အျဖစ္အပ်က္ေလးေတြ၊ လက္တေလာေရပန္းစားေနတဲ့အေၾကာင္းအရာေတြ စတာေတြကို ႀကိဳးစားၿပီးတင္ဆက္ေပးသြားမွာပဲျဖစ္ပါတယ္။ဒါ့အျပင္ ရံဖန္ရံခါမွာလည္း entertainment နဲ႔သက္ဆိုင္တဲ့အေၾကာင္းအရာေတြကို မွ်ေဝေပးသြားမွာပါ။<br><br>
-                    <p class="text-center px-3">ဒါဆိုရင္ကြၽန္ေတာ္တို႔ Page ရဲ႕မိတ္ဆက္ေလးကိုေတာ့ ဒီေလာက္နဲ႔ပဲ ရပ္နားခြင့္ျပဳပါခင္ဗ်ာ။ အႀကံေပးခ်င္တာ၊ တင္ေစခ်င္တဲ့ topic ေတြရွိရင္လည္း အခ်ိန္မေ႐ြး လာေျပာႏိုင္ပါတယ္။ ေနာက္ပိုင္းမွာလည္း လူငယ္‌ေတြကို တစ္ဖက္တစ္လမ္းကေန ကူညီေပးႏိုင္မယ့္ အက်ိဳးရွိမယ့္ Future planေတြလည္းရွိတဲ့အတြက္ အားလုံး Stay tuned ပါဗ် အခုလိုအခ်ိန္ေပးၿပီးဖတ္ေပးတဲ့ အတြက္ ေက်းဇူးအမ်ားႀကီးတင္ပါတယ္ခင္ဗ်။ ကြၽန္ေတာ္တို႔အေနနဲ႔ လူငယ္အက်ိဳးျပဳအဖြဲ႕အစည္းတစ္ခုျဖစ္ေအာင္ အတတ္ႏိုင္ဆုံးႀကိဳးစားသြားပါမယ္။</p>
+        <section id="Mission" class="min-h-screen flex justify-center items-center py-4 pt-[65px]">
+            <div>
+                <h1 class=" text-[44px] pb-3">Our Mission</i></h1>
+                <div class="border-l-4 border-rose-600 p-4 m-2">
+                    <ul>
+                        <li><i class="bi bi-check2-circle"></i> Our vision is to help young people become successful and happy in the future.</li>
+                        <li><i class="bi bi-check2-circle"></i> Through the sharing of content, Little Lighthouse aims to empower them to turn their dreams into reality.</li>
+                        <li><i class="bi bi-check2-circle"></i> We believe that becoming a role model ourselves will make the next generation follow our footsteps.</li>
+                        <li><i class="bi bi-check2-circle"></i> By doing so, we can create a more beautiful and positive environment, community, state, country, and even world.</li>
+                        <li><i class="bi bi-check2-circle"></i> We will offer all the support we can to help achieve the vision of LLH.</li>
+                    </ul>
                 </div>
             </div>
-        </section><hr class="sectDivider">
-
-        <section class="p-2 pb-3 mx-auto my-5" id="timeline">
-            <div class="container">
-                <h2 class="text-center text-white">Timeline</h2>
-                <div class="border-light border-start px-2 text-light">
-                    <p class="text-warning">13 Jul 2023</p>
-                    <p>Created our page! <i class="bi bi-gear-wide-connected"></i></p>
-                </div><hr>
-
-                <div class="border-light border-start px-2 text-light">
-                    <p class="text-warning">04 Aug 2023</p>
-                    <p>created our first post! <i class="bi bi-newspaper"></i></p>
-                </div><hr>
-
-                <div class="border-light border-start px-2 text-light">
-                    <p class="text-warning">04 Aug 2023</p>
-                    <p>2 New members joined! <i class="bi bi-person-add"></i></p>
-                </div><hr>
-
-                <div class="border-light border-start px-2 text-light">
-                    <p class="text-warning">12 Sept 2023</p>
-                    <p><i class="bi bi-facebook"></i> Reached 100 followers on Facebook! <i class="bi bi-graph-up-arrow"></i></p>
-                </div><hr>
-
-                <div class="border-light border-start px-2 text-light">
-                    <p class="text-warning">17-21 Feb 2024</p>
-                    <p><i class="bi bi-megaphone-fill"></i> Called for volunteers! (1st) <i class="bi bi-person-fill-add"></i></p>
-                </div><hr>
-
-                <div class="border-light border-start px-2 text-light">
-                    <p class="text-warning">27 Feb 2024</p>
-                    <p><i class="bi bi-facebook"></i> Reached 250 followers on Facebook! <i class="bi bi-graph-up-arrow"></i></p>
-                </div><hr>
-
-                <div class="border-light border-start px-2 text-light">
-                    <p class="text-warning">19 Jun 2024</p>
-                    <p><i class="bi bi-facebook"></i> Reached 500 followers on Facebook! <i class="bi bi-graph-up-arrow"></i></p>
-                </div><hr>
-
-                <div class="border-light border-start px-2 text-light">
-                    <p class="text-warning">Jun 2024</p>
-                    <p><i class="bi bi-megaphone-fill"></i> Called for volunteers! (2nd) <i class="bi bi-person-fill-add"></i></p>
-                </div><hr>
-            </div>
-        </section><hr class="sectDivider">
-
-        <section class="p-2 pb-3 mx-auto my-5" id="ourTeam">
-            <h1 class="text-center HeaderS"><i class="bi bi-people-fill"></i> Original Members</h1>
-            <div class="container d-flex justify-content-center flex-wrap">
-
-                <div class="card mb-4 mx-4 p-1">
-                    <img class="card-img-top" src="https://icon-library.com/images/icon-avatar/icon-avatar-6.jpg" alt="Card image" style="width:100%">
-                    <div class="card-body p-2">
-                        <h4 class="card-title">Chan</h4>
-                        <p class="card-text"><i class="bi bi-card-text"></i> Project Management</p>
-                    </div>
-                </div>
-                <div class="card mb-4 mx-4 p-1">
-                    <img class="card-img-top" src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png" alt="Card image" style="width:100%">
-                    <div class="card-body p-2">
-                        <h4 class="card-title">Eaint</h4>
-                        <p class="card-text"><i class="bi bi-brush-fill"></i> Graphic Designer</p>
-                    </div>
-                </div>
-                <div class="card mb-4 mx-4 p-1">
-                    <img class="card-img-top" src="https://cdn3.iconfinder.com/data/icons/avatar-set/512/Avatar01-512.png" alt="Card image" style="width:100%">
-                    <div class="card-body p-2">
-                        <h4 class="card-title">Khun</h4>
-                        <p class="card-text"><i class="bi bi-clipboard-data-fill"></i> Human Resources</p>
-                    </div>
-                </div>
-                <div class="card mb-4 mx-4 p-1">
-                    <img class="card-img-top" src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-PNG-Photos.png" alt="Card image" style="width:100%">
-                    <div class="card-body p-2">
-                        <h4 class="card-title">Kaung</h4>
-                        <p class="card-text"><i class="bi bi-clipboard-data-fill"></i> Human Resources</p>
-                    </div>
-                </div>
-                <div class="card mb-4 mx-4 p-1">
-                    <img class="card-img-top" src="https://www.svgrepo.com/show/382106/male-avatar-boy-face-man-user-9.svg" alt="Card image" style="width:100%">
-                    <div class="card-body p-2">
-                        <h4 class="card-title">Phyo</h4>
-                        <p class="card-text"><i class="bi bi-megaphone-fill"></i> Public Relations<br><i class="bi bi-person-workspace"></i> General Consultant </p>
-                    </div>
-                </div>
-                <div class="card mb-4 mx-4 p-1">
-                    <img class="card-img-top" src="https://cdn3.iconfinder.com/data/icons/avatar-set/512/Avatar02-512.png" alt="Card image" style="width:100%">
-                    <div class="card-body p-2">
-                        <h4 class="card-title">Kyaw</h4>
-                        <p class="card-text"><i class="bi bi-vector-pen"></i> Content Writer</p>
-                    </div>
-                </div>
-                <div class="card mb-4 mx-4 p-1">
-                    <img class="card-img-top" src="https://cdn2.iconfinder.com/data/icons/people-flat-design/64/Face-Profile-User-Man-Boy-Person-Avatar-512.png" alt="Card image" style="width:100%">
-                    <div class="card-body p-2">
-                        <h4 class="card-title">Nyan</h4>
-                        <p class="card-text"><i class="bi bi-search"></i> Researcher<br><i class="bi bi-code-slash"></i> Web Developer</p>
-                    </div>
-                </div>
-
-            </div>
-        </section><hr class="sectDivider">
-
-        <section class="mt-3 p-2 pb-3 mx-auto" id="contactUs">
-            <h1 class="text-center HeaderS"><i class="bi bi-postcard"></i> Get In Touch With Us!</h1>
-            <div class="postDiv p-2 m-2 mx-auto text-white">
-                <p class="m-0 py-1 ps-2"><i class="bi bi-envelope-fill"></i> littlelighthouse23@gmail.com</p>
-                <a class="m-0 py-1 ps-2" style="text-decoration: underline;" href="https://www.facebook.com/profile.php?id=100094347565758"><i class="bi bi-facebook"> </i>View on Facebook</a><br>
-                <a class="m-0 py-1 ps-2" style="text-decoration: underline;" href="https://t.me/+HUSKap45CEMxMDc1"><i class="bi bi-telegram"> </i>Join Telegram Channel</a>
-                <p class="m-0 py-1 ps-2"><i class="bi bi-geo-fill"></i>Location : Online</p>
-            </div>
-
-            <form class="m-auto p-3 my-5 text-white" action="https://formsubmit.co/littlelighthouse23@gmail.com" method="POST">
-                <input type="text" name="_honey" style="display:none;">
-                <input type="hidden" name="_subject" value="Message from Lighthouse Website">
-                <input type="hidden" name="_template" value="box">
-
-                <label for="name" class="form-label">Name:</label>
-                <input class="form-control" type="text" name="Name" placeholder="Your Name" required>
-
-                <label for="email" class="form-label">Email:</label>
-                <input class="form-control" type="email" name="Email" placeholder="Email Address" required>
-
-                <label for="comment" class="form-label">Comment</label>
-                <textarea class="form-control" rows="5" id="comment" name="Message" placeholder="Say Hello!"></textarea>
-                <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary mt-3 px-5" disabled>Send</button><br><br>
-                </div>
-                <p class="text-center text-warning"><i class="bi bi-exclamation-octagon-fill"></i> Contact form is under maintaining. <i class="bi bi-exclamation-octagon-fill"></i></p>
-            </form>
         </section>
 
-        <footer class="mt-5">
-            <p class="text-center text-white p-1 m-0">© 2023 Little Lighthouse<br> Visits: <script type="text/javascript" src="//counter.websiteout.net/js/7/6/0/0"></script></p><hr class="m-1 text-light">
-            <div class="container d-flex justify-content-around align-items-center mt-1 p-1">
-                <a class="text-white" onclick="notAvailable()">Notice</a>
-                <a class="text-white" onclick="notAvailable()">FAQs</a>
-                <div><a class="text-white" href="https://www.facebook.com/profile.php?id=100094347565758" target="_blank"><i style="font-size: 1.8em;" class="bi bi-facebook"></i></a></div>
-            </div>
-        </footer>
+        <div class="divider text-white">Together We Strive</div>
 
-        <script src="../js/script.js"></script>
+        <section id="Vision" class="min-h-screen flex justify-center items-center py-4">
+            <div>
+                <h1 class="text-center text-[44px] pb-3">Our Vision</i></h1>
+                <div class="p-4 m-2 flex justify-center flex-wrap gap-6">
+                    <div class="badge badge-xl badge-primary py-8 px-10">To Make Happy</div>
+                    <div class="badge badge-xl badge-secondary py-8 px-10">To Be Satisfied</div>
+                    <div class="badge badge-xl badge-danger py-8 px-10">To Inform</div>
+                    <div class="badge badge-xl badge-warning py-8 px-10">To Educate</div>
+                    <div class="badge badge-xl badge-success py-8 px-10">To Transform</div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider text-white">Together We Thrive</div>
+
+        <section id="Department" class="min-h-screen flex justify-center items-center py-4 text-white">
+            <div>
+            <h1 class="text-center text-[44px] pb-3">Our Islands</i></h1>
+                <div class="p-4 m-2 flex justify-center flex-wrap gap-8">
+                    <div class="card primaryBG w-[220px] shadow-2xl/80">
+                        <figure class="px-3 pt-3"><img class="rounded-xl" src="../images/Profile_Content.jpg" alt="Content Island Logo"/></figure>
+                        <div class="card-body p-4">
+                            <h2 class="text-base text-center">Island of Literature</h2>
+                            <div class="divider my-0"></div>
+                            <ul class="text-sm">
+                                <li>Created on : 1 Jan 2024</li>
+                                <li>6 Members</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card primaryBG w-[220px] shadow-2xl/80">
+                        <figure class="px-3 pt-3"><img class="rounded-xl" src="../images/Profile_Graphic.jpg" alt="Graphic Island Logo"/></figure>
+                        <div class="card-body p-4">
+                            <h2 class="text-base text-center">Island of Illustrative Design Creation</h2>
+                            <div class="divider my-0"></div>
+                            <ul class="text-sm">
+                                <li>Created on : 1 Jan 2024</li>
+                                <li>3 Members</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card primaryBG w-[220px] shadow-2xl/80">
+                        <figure class="px-3 pt-3"><img class="rounded-xl" src="../images/Profile_Research.jpg" alt="Resarch Island Logo"/></figure>
+                        <div class="card-body p-4">
+                            <h2 class="text-base text-center">Island of Information & Data Congregation</h2>
+                            <div class="divider my-0"></div>
+                            <ul class="text-sm">
+                                <li>Created on : 1 Jan 2024</li>
+                                <li>10 Members</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card primaryBG w-[220px] shadow-2xl/80">
+                        <figure class="px-3 pt-3"><img class="rounded-xl" src="../images/Profile_HR.jpg" alt="HR Island Logo"/></figure>
+                        <div class="card-body p-4">
+                            <h2 class="text-base text-center">Island of Crew Relation & Conduction</h2>
+                            <div class="divider my-0"></div>
+                            <ul class="text-sm">
+                                <li>Created on : 1 Jan 2024</li>
+                                <li>6 Members</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card primaryBG w-[220px] shadow-2xl/80">
+                        <figure class="px-3 pt-3"><img class="rounded-xl" src="../images/Profile_PR.jpg" alt="PR Island Logo"/></figure>
+                        <div class="card-body p-4">
+                            <h2 class="text-base text-center">Island of Diplomacy & Public Outreach</h2>
+                            <div class="divider my-0"></div>
+                            <ul class="text-sm">
+                                <li>Created on : 10 Nov 2024</li>
+                                <li>4 Members</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card primaryBG w-[220px] shadow-2xl/80">
+                        <figure class="px-3 pt-3"><img class="rounded-xl" src="../images/Profile_PM.jpg" alt="PM Island Logo"/></figure>
+                        <div class="card-body p-4">
+                            <h2 class="text-base text-center">Island of Production & Creation</h2>
+                            <div class="divider my-0"></div>
+                            <ul class="text-sm">
+                                <li>Created on : 10 Nov 2024</li>
+                                <li>4 Members</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="card primaryBG w-[220px] shadow-2xl/80">
+                        <figure class="px-3 pt-3"><img class="rounded-xl" src="../images/Profile_IT.jpg" alt="IT Island Logo"/></figure>
+                        <div class="card-body p-4">
+                            <h2 class="text-base text-center">Island of Virtual Builders</h2>
+                            <div class="divider my-0"></div>
+                            <ul class="text-sm">
+                                <li>Created on : 25 Nov 2024</li>
+                                <li>3 Members</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section id="Contact" class="min-h-screen flex justify-center items-center py-4">
+            <div>
+                <h1 class="text-center text-[44px] pb-3"><i class="bi bi-postcard"></i> Get In Touch With Us!</h1>
+                <div class="p-4 m-2 flex justify-center flex-wrap gap-3">
+                    <a href="https://www.facebook.com/profile.php?id=100094347565758"><img class="h-[44px]" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>
+                    <a href=""><img class="h-[44px]" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+                    <a href="https://www.linkedin.com/company/little-lighthouse/"><img class="h-[44px]" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+                    <a href="https://youtube.com/channel/UC7fp0ij5qIm_C1EJyovxSpQ?si=TiDICmaNg9dz-HBD"><img class="h-[44px]" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"></a>
+                    <a href="https://t.me/+TxWFd67aPqYyYmFl"><img class="h-[44px]" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
+                    <a href="https://little-lighthouse.github.io/Lighthouse/"><img class="h-[44px]" src="https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white"></a>
+                    <a href="maito:littlelighthouse23@gmail.com"><img class="h-[44px]" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+                    <a href="https://www.tiktok.com/@llh_0325?is_from_webapp=1&sender_device=pc"><img class="h-[44px]" src="https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white"></a>
+                    <a href="https://x.com/LLH0325"><img class="h-[44px]" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"></a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="mt-20 p-2 primaryBG">
+            <p class="text-center text-white mb-2">© 2023 Little Lighthouse</p>
+            <p class="flex justify-center text-white">Visits : &nbsp;<script type="text/javascript" src="//counter.websiteout.net/js/7/6/0/0"></script></p>
+        </footer>
     </body>
 </html>

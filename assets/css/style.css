@@ -1,0 +1,10 @@
+*{box-sizing: border-box;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+.primaryBG{background-color: #13376B;}
+.secondaryBG{background-color: #11b9b8;}
+.transparentBG{background-color: #ffffff4d;}
+.primaryText{color: #13376B;}
+.secondaryText{color: #fff2c5;}
+.tertiaryText{color: #11b9b8;}
+
+#banner1{background: url("../images/Banner1.svg");background-repeat: no-repeat;background-size: cover;}
+#banner2{background: url("../images/Banner2.svg"), url("../images/Banner1.svg");background-repeat: no-repeat;background-size: cover; background-blend-mode: darken;}
