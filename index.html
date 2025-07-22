@@ -1,271 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Empowering youth with contents ✍️. Illuminate, inspire, uplift 🌟. Join us to shine together! 🌏"><meta name="keywords" content="Little Lighthouse Organization, Little Lighthouse Myanmar, Little Lighthouse, LLH, Knowledge sharing, facts, LLH myanmar, organization">
-        <link rel="stylesheet" href="assets/css/main.css"><link rel="shortcut icon" href="assets/images/Logo.jpeg" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name="keywords" content="Little Lighthouse, LLH, Myanmar Youth Organization">
+        <meta name="description" content="Empowering youth with content. ✍️ Illuminate, empower, transform.🌟 Join us to shine together! 🌏">
+        <link rel="shortcut icon" href="assets/images/Logo.jpeg" type="image/x-icon">
 
+        
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0JQC1VLDM"></script>
         <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-S0JQC1VLDM');</script>
 
-        <!--Framworks-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
-        <!--Fonts-->
+        <!-- FRAMEWORKS & ICONS-->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-        <!--Icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <title>Little Lighthouse | Home</title>
     </head>
-    <body>
- <!-- -----------------------------------------------------------Nav------------------------------------------------------- -->
-        <nav class="navbar navbar-expand-sm sticky-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/Lighthouse/"><img src="assets/images/Logo.jpeg" alt="Logo" style="width:40px;" class="rounded-pill"></a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
-                
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html"><i class="bi bi-house-door-fill"></i> Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="assets/pages/posts.html"><i class="bi bi-file-post-fill"></i> Posts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="assets/pages/about.html"><i class="bi bi-info-circle-fill"></i> About</a>
-                        </li>
+    <body class="secondaryBG">
+
+        <nav class="navbar primaryBG text-base-100 shadow-md fixed inset-x-0 top-0 z-[3]">
+            <div class="flex-1">
+                <a href="index.html"><div class="avatar w-10"><img class="rounded-full" alt="Organization Logo" src="assets/images/Logo.jpeg"></div></a>
+            </div>
+
+            <div class="flex-none">
+                <div class="dropdown dropdown-end md:hidden">
+                    <label tabindex="0" class="btn btn-ghost text-base-100 btn-circle"><i class="bi bi-list text-2xl"></i></label>
+                    <ul tabindex="0" class="menu primaryBG menu-sm dropdown-content mt-4 z-[3] p-2 shadow rounded-box w-80">
+                        <li><a href="index.html" data-discover="true"><i class="bi bi-house-door-fill"></i> Home</a></li>
+                        <li><a href="assets/pages/program.html" data-discover="true"><i class="bi bi-folder2-open"></i> Programs & Projects</a></li>
+                        <li><a href="assets/pages/timeline.html" data-discover="true"><i class="bi bi-calendar4-week"></i> Our Timeline</a></li>
+                        <li><a href="assets/pages/about.html" data-discover="true"><i class="bi bi-info-circle-fill"></i> About us</a></li>
                     </ul>
                 </div>
+                
+                <ul class="menu menu-horizontal px-1 hidden md:flex items-center">
+                    <li><a href="index.html" data-discover="true"><i class="bi bi-house-door-fill"></i> Home</a></li>
+                    <li><a href="assets/pages/program.html" data-discover="true"><i class="bi bi-folder2-open"></i> Programs & Projects</a></li>
+                    <li><a href="assets/pages/timeline.html" data-discover="true"><i class="bi bi-calendar4-week"></i> Our Timeline</a></li>
+                    <li><a href="assets/pages/about.html" data-discover="true"><i class="bi bi-info-circle-fill"></i> About us</a></li>
+                </ul>
             </div>
         </nav>
-        <header class="text-center text-white">"Together We Strive, Together We Thrive!"</header>
-<!-- -----------------------------------------------------------Stats------------------------------------------------------- -->
-        <section class="statistic mt-3 text-center text-white">
-            <h1 class="HeaderS">Statistic <i class="bi bi-clipboard2-data-fill"></i></h1><!--Last Update On 1 October 2024 9:58 PM-->
-            <div class="container-fluid d-flex justify-content-center flex-wrap">
-    
-                <div class="statsBox">
-                    <span>122</span>
-                    <p>Total Uploaded Posts <i class="bi bi-laptop-fill"></i></p>
-                </div>
-    
-                <div class="statsBox">
-                    <span>22</span>
-                    <p>Uploaded Quotes <i class="bi bi-image"></i></p>
-                </div>
-    
-                <div class="statsBox">
-                    <span>7</span>
-                    <p>Uploaded Fun Facts <i class="bi bi-check2-circle"></i></p>
-                </div>
-    
-                <div class="statsBox">
-                    <span>631</span>
-                    <p>Total Followers <i class="bi bi-person-fill-add"></i></p>
-                </div>
-            </div>
-        </section><hr class="sectDivider">
-<!-- -----------------------------------------------------------FeaturedPosts------------------------------------------------------- -->
-        <section class="featuredPosts mt-3 text-white text-center">
-            <h1 class="HeaderS">Featured Posts <i class="bi bi-file-post-fill"></i></h1>
-            <div class="container-fluid d-flex justify-content-center flex-wrap">
 
-                <div class="featuredPostDiv p-2 m-2">
-                    <h2>Rebranding Our Organization!</h2>
-                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/Featured Posts/2024_3.jpg" alt="Rebranding">
-                    <p class="post-content">‼️ မီးပြတိုက်ငယ်လေးရဲ့ logoလေးကို ပိုပြီးထင်ရှားသွားအောင် rebrand ပြန်လည်လုပ်ဆောင်ခဲ့ပြီး Logo လေးကိုတော့ Little Cupcake တစ်ဦးဖြစ်တဲ့ အစ်ကိုကျော်ဇော်ဟိန်းကဆွဲပေးခဲ့တာပါ။ အစ်ကိုကျော်ဇော်ဟိန်းက သူ့ရဲ့ဒေသမှာ စစ်ဘေး၊ သဘာဝဘေး ကြုံရခဲ့တဲ့အပြင် နေရာအပြောင်းအရွှေ့တွေပြုလုပ်ခဲ့ရပေမယ့်လည်း မီးပြတိုက်ငယ်လေးအတွက် အကောင်းဆုံးကြိုးစားပေးနေတဲ့ အားကိုးရတဲ့ အစ်ကိုတစ်ယောက်လည်းဖြစ်ပါတယ်။ ❣️</p>   
-                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=389252720896310&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                </div>
-
-                <div class="featuredPostDiv p-2 m-2">
-                    <h2>Little Lighthouse Telegram Channel</h2>
-                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/Featured Posts/2024_2.jpg" alt="LLH Tele Channel">
-                    <p class="post-content">Little Lighthouse - မီးပြတိုက်ငယ် Telegram Channel is Here!🥳🎉🎉" <br> "Little Lighthouse - မီးပြတိုက်ငယ် telegram channel ကို ဘာလို့ join ရမှာလဲ? Why?" <br><br>ပထမဦးဆုံးပြောချင်တာက မ join ရင် နောင်တ အချီကြီးရနေမယ်ဆိုတာပါပဲ 🫵🏻😏။</p>   
-                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=342876645533918&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                </div>
-
-                <div class="featuredPostDiv p-2 m-2">
-                    <h2>ပညာရေးနယ်ပယ်ပေါင်းစုံစုဝေးရာ EduSurfers</h2>
-                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/Featured Posts/2024_1.jpg" alt="EduSurfers">
-                    <p class="post-content">ဒီနေ့မှာတော့ Lightkeepers လေးတို့ရဲ့ ပညာရေးအတွက် တိကျသေချာတဲ့ သတင်းအချက်အလက်တွေရရှိဖို့ကို ကျွမ်းကျင်တဲ့ ပုဂ္ဂိုလ်တွေဆီမှာ တိုက်ရိုက်မေးမြန်းနိုင်အောင် အက်မင်တို့ Little Lighthouse ကနေပြီးတော့ ပေါင်းကူးတံတားလေးတစ်ခု တည်ဆောက်ပေးထားပါတယ်။</p>   
-                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=320622647759318&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                </div>
-
-            </div>
-        </section><hr class="sectDivider">
-<!-- -----------------------------------------------------------RecentPostDiv------------------------------------------------------- -->
-        <section class="recentPosts mt-3 text-white text-center">
-            <h1 class="HeaderS">Recently Uploaded <i class="bi bi-file-post-fill"></i></h1>
-            <div class="container py-4">
-                <div class="postDiv border rounded p-3">
-                    <div class="row g-4">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>September Post Link Collection ✨</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/2024/2024_52.jpg" alt="September Post Link Collection ✨">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">အခုဆိုရင် September လလေးလည်း ကုန်ဆုံးတော့မှာ ဖြစ်ပါတယ်။ September လအတွင်းမှာဆိုရင် Motivation Quotes, Education, News For Youth, Did you know?, Vid For Mental, Your Say, EngSetout with Pete နဲ့ Entertain Youth ခေါင်းစဥ်တွေအောက်ကနေ စိတ်ဝင်စားဖွယ် Contents ကောင်းတွေနဲ့ Sharing လုပ်ပေးခဲ့တာ ဖြစ်ပါတယ်။ </p>   
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=393822837105965&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="">View on <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>English Setout with Pete Ep-4</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/English Setout with Pete/Ep-4.jpg" alt="English Setout with Pete Ep-4">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">ကျွန်တော်တို့ နေ့စဉ်ဘဝလုပ်ငန်း‌ဆောင်တာတွေမှာ စာဖတ်ခြင်းဟာ အရေးကြီးတဲ့ အခန်းကဏ္ဍတွေမှာ အမြဲပါဝင်နေမြဲဖြစ်ပါတယ်။ သို့သော်လည်းပဲ ဘာသာစကားတစ်ခု ကျွမ်းကျင်သင်ယူနေချိန်မှာတော့ စာဖတ်တတ်အောင်ကျင့်ရတာဟာလည်း ခက်ခဲတဲ့သင်ယူခြင်း တစ်မျိုးပဲဖြစ်ပါတယ်။</p>   
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=391402364014679&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="">View on <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>Crush on Someone (Lyrics From K-Pop)</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/2024/2024_51.jpg" alt="Crush on Someone (Lyrics From K-Pop)">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">လူတစ်ယောက်ကို သဘောကျရတာက စပျစ်သီးလေးတွေနဲ့ တူတယ်နော်။ ချိုသလိုလိုနဲ့ ချဉ်စေနိုင်မယ့် အသီးလေး‌ပေါ့။ သူတို့ကို ရည်ရွယ်ပြီး နားထောင်သင့်တဲ့ သီချင်းလေးကို lightkeepers လေးတွေနဲ့အတူ မျှဝေပေးချင်ပါတယ်ရှင့်။🍇</p>   
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=391397734015142&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="">View on <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>Wai Hnin Phyu's Feedback</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/2024/2024_50.jpg" alt="Wai Hnin Phyu's Feedback">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">💁‍♀️ဒီနေ့ကတော့ Little Lighthouse ရဲ့ မရှိမဖြစ် အဖိုးတန် ရတနာလေးတွေ ဖြစ်တဲ့ Little Cupcakesလေးတွေရဲ့ Volunteer လုပ်နေစဥ် ကာလအတွင်း ကြုံတွေ့ရတဲ့ အတွေ့အကြုံ၊ ဗဟုသုတ၊ ခံစားချက် တွေကို မျှဝေပေးလေ့ရှိတဲ့ Your_Say လို့ ခေါ်တဲ့ Honest Feedback Section အလှည့်ပဲ ဖြစ်ပါတယ်။ 👍💟</p>   
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=387690111052571&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="">View on <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>Links of YouTube Channels for Youth</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/2024/2024_49.jpg" alt="Links of YouTube Channels for Youth">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">ကဲ ….အခုတစ်ခါက်မှာတော့ ကျောင်းစာတွေအပြင် ပြင်ပဗဟုသုတတွေကိုပါ အကျိုးရှိရှိနဲ့ လေ့လာလို့ရမယ့် YouTube Channels တွေကို lightkeeper လေးတို့အတွက် ဆရာစားမချန် sharing လုပ်ပေးလိုက်ပါတယ်နော်။☁️✨</p>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=385507724604143&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://telegra.ph/Links-of-YouTube-Channels-for-Youth-09-20">View on <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>Smoking VS Vaping</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/2024/2024_48.jpg" alt="Smoking VS Vaping">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">တကယ်တော့ vaping products တွေထဲမှာပါဝင်တဲ့ substances တွေက အဆုတ်ကို တော်တော်လေးကို ပျက်စီးစေနိုင်ပါတယ်။ အဲတာကို EVALI (E-cigarettes or Vaping product use Associated Lung Injury ) လို့ခေါ်ပါတယ်။ EVALI က အဆုတ်ရောင်ရမ်းတဲ့ condition တစ်ခုဖြစ်ပြီးတော့ သင်က ၃၅နှစ်အောက်သာဆိုရင် ဆေးရုံတက်ဖို့တောင် လိုတဲ့အထိ အန္တရာယ်တွေရှိနိုင်ပါတယ်။</p>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=383980978090151&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://telegra.ph/Smoking-Vs-Vaping-09-22">View on <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>Flooding</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/2024/2024_47.jpg" alt="Flooding">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">🚨 ဒီနှစ်အတွင်းမှာ အာဖဂန်နစ္စတန်၊ ဘရာဇီး၊ အင်ဒိုနီးရှား၊ ယူအေအီး၊ ဖိလစ်ပိုင် စတဲ့ကမ္ဘာ့နိုင်ငံတွေမှာ ရေဘေး ဒုက္ခခံစားခဲ့ရပါတယ်။ လက်ရှိအချိန်မှာ ဆိုရင်လည်း နိုင်ဂျီးရီးယား၊ မိုရိုကိုစတဲ့နိုင်ငံတွေမှာ ရေဘေးကြောင့်ဖြစ်လာတဲ့ အခက်အခဲ ဒုက္ခတွေကို ခံနေကြရပြီးတော့ မြန်မာနိုင်ငံမှာဆိုရင်လည်း နေပြည်တော်၊ တပ်ကုန်း၊ ပျဉ်းမနား၊ လယ်ဝေး၊ ပုဗ္ဗသီရိ၊ ဇေယျာသီရိ စတဲ့မြို့နယ်တွေသာမက ရှမ်းပြည်နယ်တောင်ပိုင်းက မြို့နယ်တွေမှာပါ ပြည်သူများစွာက ရေကြီးတာတွေရဲ့ အကျိုးဆက်တွေကို အလူးအလဲခံစားနေရပါတယ်။</p>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/photo.php?fbid=381140111707571&set=a.129336736887911&type=3&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="">View on <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>Obesity & Today Society</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/2024/2024_46.jpg" alt="Obesity & Today Society">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">👨🏻‍💻 WHO ရဲ့ အဆိုအရ အဝလွန်တယ်ဆိုတာက နာတာရှည်ရောဂါတစ်မျိုးဖြစ်တဲ့အပြင် ခန္ဓာကိုယ်အတွင်းမှာ အဆီပိုတွေ စုဆောင်းမိတာကနေအစပြုပြီးတော့ ကျန်းမာရေးကို ထိခိုက်စေနိုင်ပါ‌တယ်။ ခန္ဓာကိုယ်မှာ အဆီပိုတွေ အရမ်းများတဲ့အခါ ခန္ဓာကိုယ်ရဲ့ အလုပ်လုပ်ပုံဟာ တဖြည်းဖြည်းပြောင်းလဲလာပါတယ်။ အဲ့တာဟာ အချိန်နဲ့အမျှ ဆိုးရွားလာနိုင်ပြီး ကျန်းမာရေးထိခိုက်မှုတွေ ကိုဖြစ်စေနိုင်တယ်။</p>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=379784925176423&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://telegra.ph/Obesity--Today-Society-09-11">View on <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>Scholarship Series</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/2024/2024_45.jpg" alt="Scholarship Series">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">💁‍♂️ဒီတစ်‌ခေါက် မျှဝေပေးမယ့်အကြောင်းအရာလေးကတော့ နိုင်ငံခြားမှာ ပညာသင်ကြားဖို့ ရည်ရွယ်ထားတဲ့ Lightkeepers လေးတို့အတွက် အသုံးဝင်မယ့် Scholarships အကြောင်းကို မိတ်ဆက်ပေးသွားမှာပါနော်။</p>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=373773199110929&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://telegra.ph/Scholarship-Series-Part-1-09-11">Part 1 <i class="bi bi-telegram"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://telegra.ph/Scholarship-Series-Part-2-09-11">Part 2 <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="post" onclick="togglePost(this)">
-                                <div class="postHeader">
-                                    <h2>August Post Link Collection ✨</h2>
-                                    <img style="width: 40%;height: auto;" src="https://little-lighthouse.github.io/Post_Images/2024/2024_44.jpg" alt="August Post Link Collection">
-                                </div>
-                                <div class="postContent">
-                                    <p class="post-content">အခုဆိုရင် August လလည်း တဖြည်းဖြည်း ကုန်ဆုံးတော့မှာ ဖြစ်ပါတယ်နော်။ August လ အတွင်းမှာ Motivation Quotes, Edushare For Youth နဲ့ News For Youth, Did you know?, Vid For Mental, Your_Say, Engsetout_with_Pete နဲ့ Entertain Youth ခေါင်းစဥ်လေးတွေအောက်ကနေ Content လေးတွေ တင်ပေးဖြစ်ခဲ့ပါတယ်။ ဒီ Post လေးမှာတော့ Lightkeepers လေးတို့အတွက် August လအတွင်းမှာ တင်ပေးခဲ့တဲ့ Content တွေကို စုစည်းတင်ပေးလိုက်ပါတယ်နော်။ 🙌</p>   
-                                    <a class="btn px-3 py-1" target="_blank" href="https://www.facebook.com/permalink.php?story_fbid=370992262722356&id=100094347565758&ref=embed_post">View on <i class="bi bi-facebook"></i></a>
-                                    <a class="btn px-3 py-1" target="_blank" href="https://telegra.ph/Augusts-Link-Collection-08-31">View on <i class="bi bi-telegram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>           
+        <section id="banner1" class="pt-[65px] w-full min-h-screen flex justify-center items-center tertiaryText">
+            <h1 class="text-[30px] text-center">Warmly welcome to our Little Lighthouse, where knowledge blossoms and inspiration flourishes!</h1>
         </section>
-<!-- -----------------------------------------------------------Footer------------------------------------------------------- -->
 
-        <footer class="mt-5">
-            <p class="text-center text-white p-1 m-0">© 2023 Little Lighthouse<br> Visits: <script type="text/javascript" src="//counter.websiteout.net/js/7/6/0/0"></script></p><hr class="m-1 text-light">
-            <div class="container d-flex justify-content-around align-items-center mt-1 p-1">
-                <a class="text-white" onclick="notAvailable()">Terms of Use</a>
-                <a class="text-white" onclick="notAvailable()">FAQs</a>
-                <div><a class="text-white" href="https://www.facebook.com/profile.php?id=100094347565758" target="_blank"><i style="font-size: 1.8em;" class="bi bi-facebook"></i></a></div>
+        <section id="introduction" class="flex justify-around flex-wrap secondaryText secondaryBG">
+            <div class="w-[480px] border-l-4 border-rose-600 p-4 m-2">
+                <h2>Founded on 13th July 2023</h2>
+                <h2>Ran as Youth Org since January 2024</h2><br>
+                <p>Little Lighthouse (LLH) is a youth organization mainly focuses on content creation, which involves sharing knowledge and essential basic skills in life for young minds to be happy in life.</p>
             </div>
-        </footer>
 
-        <script src="assets/js/script.js"></script>
+            <div>
+                <img class="w-40 rounded-full" src="assets/images/Logo.jpeg" alt="Logo">
+            </div>
+        </section>
+
+        <section id="banner2" class="pt-[65px] w-full min-h-screen flex justify-center items-center tertiaryText">
+            <h1 class="text-[30px] text-center">At Little Lighthouse, our mission is to focus on the happiness of youth by fostering personal development.</h1>
+        </section>
+
+        <section id="About" class="text-center py-4 secondaryText secondaryBG">
+            <div class="w-fit border-l-4 border-rose-600 p-4 m-2">
+                <h2 class="text-left text-[24px]">About <i>Little Lighthouse</i></h2>
+                <p>As the name suggests, "Little Lighthouse," our dedicated goal is to illuminate your path and guide you through obstacles and challenges with unwavering commitment. We're not just about guiding you through challenges and obstacles. We are committed to expanding our reach and making a positive impact on society.</p>
+            </div>
+            <a class="primaryBG secondaryText py-3 px-4" href="assets/pages/about.html">Learn More!</a>
+        </section>
+
+        <footer class="mt-20 p-2 primaryBG">
+            <p class="text-center text-white mb-2">© 2023 Little Lighthouse</p>
+            <p class="flex justify-center text-white">Visits : &nbsp;<script type="text/javascript" src="//counter.websiteout.net/js/7/6/0/0"></script></p>
+        </footer>
     </body>
 </html>
-
-
-
-
-<!-- ScrollPostFormat -->
-<!-- 
-<div class="col-lg-6 col-md-12">
-    <div class="post" onclick="togglePost(this)">
-        <div class="postHeader">
-
-        </div>
-        <div class="postContent">
-
-        </div>
-    </div>
-</div>
- -->
